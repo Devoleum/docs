@@ -43,8 +43,8 @@ Questo è un esempio di un passaggio della filiera in formato JSON:
   "method": "a mano",
   "randomValue": "N6L! Qw @ EEdXP844",
   "thumbnail" : "https://raw.githubusercontent.com/Devoleum/templates-json/master/steps/imgs/thumbnails/small_harvest.png" ,
-  "Data": 
-1600601747}
+  "date": 1600601747
+ }
 ```
 
 I file JSON che possiamo usare con Devoleum hanno una parte fissa composta da quattro parametri richiesti:` name`, `description` e` thumbnail`. I file JSON possono essere arricchiti con molti più parametri. Ad esempio, coordinate GPS, collegamenti a documenti, voci di valori (es. Quantità), collegamenti ad altri media, ecc. Tutto ciò che l'utente pensa può aggiungere valori alla cronologia dei suoi prodotti. Questo è possibile perché utilizzando un JSON memorizziamo solo i riferimenti alla blockchain di Ethereum e non i file stessi.  
