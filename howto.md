@@ -90,7 +90,7 @@ The merchant can create a history about a product and add steps into it, followi
 * The merchant add a step named “Processing” in the history “Evoil 2020”
 * And add steps to this history until the product is sold in a market
 
-This process will result in a supply chain history on Devoleum:
+This process will result in a supply chain history on **Devoleum**:
 
 [!image]
 
