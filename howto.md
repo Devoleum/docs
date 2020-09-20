@@ -49,3 +49,52 @@ The JSON files that we can use with Devoleum have a fixed part composed of four 
 As we can see looking at the example above, in that case we have enriched the JSON with three additional properties: `method`, `quantity` and `date`. The `randomValue` is strongly recommended for provacy purposed.
 
 # 2. How to notarize your supply chain using Devoleum
+
+## 2.1 Prerequisites to insert data into Devoleum
+
+* The first prerequisite is to have a browser like **Google Chrome**, **Firefox** or **Brave**. On your smarthone you can use **Metamask Mobile**.
+* The browser must have the **Metamask extension** installed, which allows you to interact with the blockchain, more details here: [https://metamask.io/](https://metamask.io/)
+
+> A nice video tutorial about Metamask can be found [here](https://www.youtube.com/watch?v=yWfZnjkhhhg), remember to set it to the **Rinkeby network**.  
+
+*Note: Metamask extension is only needed for data insertion. Everyone can read the data and explore histories with a simple browser from any device.*
+
+## 2.2 Configure Metamask
+
+* Set **MetaMask network** to **Rinkeby**, Devoleum uses the Rinkeby test network, which does not use real cryptocurrencies but fictitious funds, because the purpose is to track the data without implying financial transactions, so no need to buy cryptocurrencies.
+* To get funds on the **Rinkeby network**, simply use a faucet available at this link: [https://faucet.rinkeby.io/](https://faucet.rinkeby.io/)
+
+
+## 2.3 Devoleum platforms
+
+Go on [Devoleum.com](https://www.devoleum.com/) and chose to use the [Simulation](https://simulation.devoleum.com/) or the [Collaboration](https://collaborations.devoleum.com/Histories) platform. 
+
+The **Collaboration platform** is used for official collaborations and needs a pre approval. 
+
+**Devoleum** is composed by three main parts:
+
+* Merchant profile
+* Product history
+* Supply chain’s step
+
+The merchant can create a history about a product and add steps into it, following a hierarchy structure. 
+
+### Example
+
+[!image]
+
+## 2.4 Storytelling
+
+As it's possible to see in the example above, every single step allows you to build a page that tells the story of the product thanks to **Devoleum**. The story is shown by merging the JSON links notarized on the Ethereum blockchain by the merchant.
+
+The **history of the product** with the blockchain notarization references can be shared via a **link** or **QR code**.
+
+The final consumer is thus given the opportunity to easily consult the history of the product thanks to the use of a link or the scan of a QR code.
+
+## 2.5 Open and Accessible
+
+**Devoleum** is developed with **accessibility by design**, the history of the products can be access using from any mobile or desktop browser.
+
+Furthermore, the **open source** nature of the project leaves infinite possibilities for creating support services and integration in third party sites (eg widgets on e-commerce, integration with robots / machinery for automated data entry) thanks to the use of the **Devoleum APIs** which they can also be created by Devoleum users.
+
+
