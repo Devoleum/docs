@@ -91,9 +91,9 @@ Il commerciante può creare una cronologia di un prodotto e aggiungere passaggi,
 * Il commerciante aggiunge un passaggio denominato "Elaborazione" nella cronologia "Evoil 2020"
 * E aggiungi passaggi a questo cronologia fino alla vendita del prodotto su un mercato
 
-Questo processo risulterà in una cronologia della catena di approvvigionamento su **Devoleum:!**
+Questo processo risulterà in una cronologia della catena di approvvigionamento su **Devoleum:**
 
-[esempio](https://github.com/Devoleum/docs/blob/master/img/EN/example_en.png?raw=true)
+![esempio](https://github.com/Devoleum/docs/blob/master/img/EN/example_en.png?raw=true)
 
 ## 2.4 Storytelling
 
