@@ -11,7 +11,7 @@ Su **Devoleum** puoi visualizzare la cronologia del prodotto semplicemente utili
 
 ## 1.2 Trasparenza e accessibilità 
 
-**Devoleum** è un [**Open Source** project](https://github.com/Devoleum), ognuno può implementarlo e usarlo a modo suo. 
+**Devoleum** è un progetto [**Open Source**](https://github.com/Devoleum), ognuno può implementarlo e usarlo a modo suo. 
 
 L'**obiettivo di Devoleum** è offrire un servizio *trasparente* e *accessibile* ai consumatori e ai produttori, utilizzando l'immutabilità blockchain come valore aggiunto per rendere i dati archiviati autentici e impossibili da manipolare.
 
@@ -22,9 +22,10 @@ L'**obiettivo di Devoleum** è offrire un servizio *trasparente* e *accessibile*
 
 > Esempio dei dati memorizzati nel contratto intelligente sul
 blockchain
->>**Link:**
-https://raw.githubusercontent.com/Devoleum/templates-json/master/steps/harvest.json
->>**Hash:** 25b95975cdc2b5c2d86d93de2bae687124f4f250ac02d3010cdfe8d4031dedc8
+>
+>**Link:**https://raw.githubusercontent.com/Devoleum/templates-json/master/steps/harvest.json
+>
+>**Hash:** 25b95975cdc2b5c2d86d93de2bae687124f4f250ac02d3010cdfe8d4031dedc8
 
 ## 1.4 Formato JSON
 
