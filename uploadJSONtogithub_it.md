@@ -1,6 +1,6 @@
 # Guida JSON - hosting su Github
 
-**[Github.com](Github.com)** è una multinazionale americana che fornisce hosting per **sviluppo software** e **controllo versione** utilizzando [Git](https: //git-scm.com/). Offre la funzionalità **controllo della versione distribuita** e **gestione del codice sorgente (SCM)** di [Git](https://git-scm.com/), oltre alle proprie funzionalità.
+**[Github.com](Github.com)** è una multinazionale americana che fornisce hosting per **sviluppo software** e **controllo versione** utilizzando [Git](https://git-scm.com/). Offre la funzionalità **controllo della versione distribuita** e **gestione del codice sorgente (SCM)** di [Git](https://git-scm.com/), oltre alle proprie funzionalità.
 
 ## 1.1 Creare un repository pubblico
 
