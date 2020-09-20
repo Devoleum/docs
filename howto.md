@@ -1,7 +1,7 @@
 # Devoleum
 **[Devoleum](devoleum.com)** is a web platform based on **Ethereum blockchain** that allows you to notarize and track supply chains of *digital* or *physical* products, use cases can range from traditional agricultural supply chain to streaming services.
 
-Visit Devoleum at Devoleum.com
+Visit Devoleum at [Devoleum.com](Devoleum.com)
 
 # 1. Easy to use
 
@@ -21,8 +21,8 @@ On **Devoleum** you can view the product history simply by using the *product hi
 
 
 > Example of the data stored in the smart contract on the blockchain
-**Link:** https://raw.githubusercontent.com/Devoleum/templates-json/master/steps/harvest.json
-**Hash:** 25b95975cdc2b5c2d86d93de2bae687124f4f250ac02d3010cdfe8d4031dedc8
+> **Link:** https://raw.githubusercontent.com/Devoleum/templates-json/master/steps/harvest.json
+> **Hash:** 25b95975cdc2b5c2d86d93de2bae687124f4f250ac02d3010cdfe8d4031dedc8
 
 ## 1.4 JSON format
 
