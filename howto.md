@@ -7,7 +7,7 @@ Visit Devoleum at [Devoleum.com](Devoleum.com)
 
 On **Devoleum** you can view the product history simply by using the *product history* **link** or using a **QR code**. The consumer will simply have to scan a QR Code.
 
-[!image]()
+[!image](https://github.com/Devoleum/docs/blob/master/img/EN/example_en.png)
 
 ## 1.2 Transparency and accessibility 
 
