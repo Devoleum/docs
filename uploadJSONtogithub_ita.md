@@ -51,9 +51,9 @@ I file JSON che possiamo usare con Devoleum hanno una parte fissa composta da qu
 
 Come possiamo vedere guardando l'esempio sopra, in quel caso abbiamo arricchito il JSON con tre proprietà aggiuntive: `method`,` quantity` e `date`. "randomValue" è fortemente raccomandato per scopi provacy .
 
-# 2. Come autenticare la propria catena di approvvigionamento utilizzando Devoleum
+# 2. Come notarizzare la propria filiera utilizzando Devoleum
 
-## 2.1 Prerequisiti per inserire dati in Devoleum
+## 2.1 Prerequisiti per immettere dati utilizzando Devoleum
 
 * Il primo prerequisito è disporre di un browser come **Google Chrome**, **Firefox** o **Brave**. Sul tuo smartphone puoi utilizzare **Metamask Mobile**.
 * Il browser deve avere l '**Metamask estensione** installata, che ti permette di interagire con la blockchain, maggiori dettagli qui: [https://metamask.io/](https://metamask.io/)
