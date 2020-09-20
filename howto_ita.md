@@ -5,7 +5,7 @@ Visita Devoleum su [Devoleum.com](Devoleum.com)
 
 # 1.1 Facile da usare
 
-Su **Devoleum** puoi visualizzare la cronologia del prodotto semplicemente utilizzando la *cronologia del prodotto* **link** o utilizzando un **codice QR**. Il consumatore dovrà semplicemente scansionare un codice QR.
+Su **Devoleum** puoi visualizzare la storia del prodotto semplicemente utilizzando un **link** o utilizzando un **codice QR**. Il consumatore dovrà semplicemente scansionare un codice QR.
 
 ![esempio](https://github.com/Devoleum/docs/blob/master/img/EN/easytouse_en.png?raw=true)
 
@@ -49,23 +49,23 @@ Questo è un esempio di un passaggio della filiera in formato JSON:
 
 I file JSON che possiamo usare con Devoleum hanno una parte fissa composta da quattro parametri richiesti:` name`, `description` e` thumbnail`. I file JSON possono essere arricchiti con molti più parametri. Ad esempio, coordinate GPS, collegamenti a documenti, voci di valori (es. Quantità), collegamenti ad altri media, ecc. Tutto ciò che l'utente pensa può aggiungere valori alla cronologia dei suoi prodotti. Questo è possibile perché utilizzando un JSON memorizziamo solo i riferimenti alla blockchain di Ethereum e non i file stessi.  
 
-Come possiamo vedere guardando l'esempio sopra, in quel caso abbiamo arricchito il JSON con tre proprietà aggiuntive: `method`,` quantity` e `date`. "randomValue" è fortemente raccomandato per scopi provacy .
+Come possiamo vedere guardando l'esempio sopra, in quel caso abbiamo arricchito il JSON con tre proprietà aggiuntive: `method`,` quantity` e `date`. "randomValue" è fortemente raccomandato per tutelare maggiormente la privacy.
 
 # 2. Come notarizzare la propria filiera utilizzando Devoleum
 
 ## 2.1 Prerequisiti per immettere dati utilizzando Devoleum
 
 * Il primo prerequisito è disporre di un browser come **Google Chrome**, **Firefox** o **Brave**. Sul tuo smartphone puoi utilizzare **Metamask Mobile**.
-* Il browser deve avere l '**Metamask estensione** installata, che ti permette di interagire con la blockchain, maggiori dettagli qui: [https://metamask.io/](https://metamask.io/)
+* Il browser deve avere l '**estensione Metamask** installata, che ti permette di interagire con la blockchain, maggiori dettagli qui: [https://metamask.io/](https://metamask.io/)
 
-> Un bel il video tutorial su Metamask può essere trovato [qui](https://www.youtube.com/watch?v=yWfZnjkhhhg), ricordati di impostarlo sulla **Rinkeby rete**.  
+> Un video tutorial su Metamask può essere trovato [qui](https://www.youtube.com/watch?v=yWfZnjkhhhg), ricordati di impostare Metamask sulla **rete Rinkeby**.  
 
-*Nota: l'Metamask estensioneè necessaria solo per l'inserimento dei dati. Tutti possono leggere i dati ed esplorare le storie con un semplice browser da qualsiasi dispositivo.*
+*Nota: l'estensione Metamask è necessaria solo per l'inserimento dei dati. Tutti possono leggere i dati ed esplorare le storie con un semplice browser da qualsiasi dispositivo.*
 
 ## 2.2 Configurare Metamask
 
-* Impostare **MetaMask rete** su **Rinkeby**, Devoleum utilizza la Rinkeby rete di test, che non utilizza criptovalute reali ma fondi fittizi, perché lo scopo è tracciare i dati senza implicare transazioni finanziarie, quindi non c'è bisogno di acquistare criptovalute.
-* Per ottenere fondi sulla **Rinkeby rete**, utilizza semplicemente un rubinetto disponibile a questo link: [https://faucet.rinkeby.io/](https://faucet.rinkeby.io/)
+* Impostare **rete MetaMask** su **Rinkeby**, Devoleum utilizza Rinkeby rete di test, non utilizza criptovalute reali ma fondi fittizi, perché lo scopo è tracciare i dati senza implicare transazioni finanziarie, quindi non c'è bisogno di acquistare criptovalute.
+* Per ottenere fondi sulla **Rinkeby rete**, utilizza semplicemente un "faucet" disponibile a questo link: [https://faucet.rinkeby.io/](https://faucet.rinkeby.io/)
 
 
 ## 2.3 Devoleum piattaforme
@@ -77,21 +77,21 @@ La **piattaforma di collaborazione** viene utilizzata per le collaborazioni uffi
 **Devoleum** è composto da tre parti principali:
 
 * Profilo del commerciante
-* Cronologia del prodotto
-* Passaggio della catena di fornitura
+* Storia del prodotto
+* Passaggio della filiera
 
-Il commerciante può creare una cronologia di un prodotto e aggiungere passaggi, seguendo una struttura gerarchica. 
+Il commerciante può creare una storia di un prodotto e aggiungere passaggi, seguendo una struttura gerarchica. 
 
 ### Esempio
 
 * Il commerciante "Evoil" crea un profilo sulla Devoleum piattaforma di simulazione, nella sezione del profilo
 * Il commerciante crea una storia chiamata "Evoil 2020" sulla produzione delle EVOO bottiglienel 2020
-* Il commerciante aggiunge un passaggio denominato "Raccolto" nella cronologia "Evoil 2020"
-* Il commerciante aggiunge un passaggio denominato "Trasporto" nella cronologia "Evoil 2020"
-* Il commerciante aggiunge un passaggio denominato "Elaborazione" nella cronologia "Evoil 2020"
+* Il commerciante aggiunge un passaggio denominato "Raccolto" nella storia "Evoil 2020"
+* Il commerciante aggiunge un passaggio denominato "Trasporto" nella storia "Evoil 2020"
+* Il commerciante aggiunge un passaggio denominato "Elaborazione" nella storia "Evoil 2020"
 * E aggiungi passaggi a questo cronologia fino alla vendita del prodotto su un mercato
 
-Questo processo risulterà in una cronologia della catena di approvvigionamento su **Devoleum:**
+Questo processo risulterà in una storia della filiera su **Devoleum:**
 
 ![esempio](https://github.com/Devoleum/docs/blob/master/img/EN/example_en.png?raw=true)
 
@@ -105,7 +105,7 @@ Al consumatore finale viene così data la possibilità di consultare facilmente 
 
 ## 2.5 Aperto e accessibile
 
-**Devoleum** è sviluppato con **accessibilità in base alla progettazione**, è possibile accedere alla cronologia dei prodotti utilizzando da qualsiasi browser mobile o desktop.
+**Devoleum** è sviluppato seguendo l'ottica **accessibility by design**, è possibile accedere alla storia dei prodotti utilizzando un qualsiasi browser mobile o desktop.
 
 Inoltre la natura **open source** del progetto lascia infinite possibilità per la creazione di servizi di supporto e integrazione in siti di terze parti (es. Widget su e-commerce, integrazione con robot / macchinari per l'inserimento automatizzato dei dati) grazie all'utilizzo del **Devoleum API** che possono essere create anche dagli Devoleum utenti.
 
