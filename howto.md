@@ -7,7 +7,7 @@ Visit Devoleum at [Devoleum.com](Devoleum.com)
 
 On **Devoleum** you can view the product history simply by using the *product history* **link** or using a **QR code**. The consumer will simply have to scan a QR Code.
 
-[!image](https://github.com/Devoleum/docs/blob/master/img/EN/example_en.png?raw=true)
+![example](https://github.com/Devoleum/docs/blob/master/img/EN/easytouse_en.png?raw=true)
 
 ## 1.2 Transparency and accessibility 
 
@@ -92,7 +92,7 @@ The merchant can create a history about a product and add steps into it, followi
 
 This process will result in a supply chain history on **Devoleum**:
 
-[!image]
+![example](https://github.com/Devoleum/docs/blob/master/img/EN/example_en.png?raw=true)
 
 ## 2.4 Storytelling
 
