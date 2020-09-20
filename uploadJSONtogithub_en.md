@@ -33,7 +33,7 @@ The **JSON**  files that we can use with **Devoleum** have a fixed part:
 
 The **JSON**  files that we can use with Devoleum have a fixed part composed of four required parameters: `name`, `description` and `thumbnail`. The **JSON**  files can be enriched with many more parameters. For example, GPS coordinates, document links, values entries (eg. quantity), links to other media, etc. Everything that the user thinks can add values to the history of their products. This is possible because using a JSON we store only the references to the **Ethereum blockchain** and not the files themself.  
 
-As we can see looking at the example above, in that case we have enriched the **JSON**  with three additional properties: `method`, `quantity` and `date`. The `randomValue` is strongly recommended for provacy purposed.
+As we can see looking at the example above, in that case we have enriched the **JSON**  with three additional properties: `method`, `quantity` and `date`. The `randomValue` is strongly recommended for privacy purposed.
 
 ## 1.4 Create a JSON file 
 
