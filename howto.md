@@ -83,6 +83,15 @@ The merchant can create a history about a product and add steps into it, followi
 
 ### Example
 
+* The merchant “Evoil” creates a profile on Devoleum simulation platform, in the profile section
+* The merchant creates an history called “Evoil 2020” about the production of the EVOO bottles in the 2020
+* The merchant add a step named “Harvest” in the history “Evoil 2020”
+* The merchant add a step named “Transport” in the history “Evoil 2020”
+* The merchant add a step named “Processing” in the history “Evoil 2020”
+* And add steps to this history until the product is sold in a market
+
+This process will result in a supply chain history on Devoleum:
+
 [!image]
 
 ## 2.4 Storytelling
