@@ -56,7 +56,7 @@ The JSON files that we can use with Devoleum have a fixed part composed of four 
 | thumbnail | thumbnail direct link |
 | date | a date es. 25/09/2020 |
 
-As we can see looking at the example above, in that case we have enriched the JSON with three additional properties: `method`, `quantity` and `date`. The `randomValue` is strongly recommended for provacy purposed.
+As we can see looking at the example above, in that case we have enriched the JSON with three additional properties: `method` and `quantity`. The `randomValue` is strongly recommended for provacy purposed.
 
 ## 1.5 JSON format Multilanguage
 
