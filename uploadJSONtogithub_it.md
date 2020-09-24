@@ -27,7 +27,7 @@ I file **JSON** che possiamo usare con **Devoleum** hanno una parte fissa:
   "method":"a mano" ,
   "randomValue": "N6L! Qw @ EEdXP844",
   "thumbnail": "https://raw.githubusercontent.com/Devoleum/templates-json/master/steps/imgs/thumbnails/small_harvest.png",
-  "date" : 10/09/2020
+  "date" : 11/09/2020
 }
 ```
 
