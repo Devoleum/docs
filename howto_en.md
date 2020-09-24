@@ -42,7 +42,7 @@ This is an example of a supply chain step in JSON format:
   "method": "by hand",
   "randomValue": "N6L!Qw@EEdXP844",
   "thumbnail" : "https://raw.githubusercontent.com/Devoleum/templates-json/master/steps/imgs/thumbnails/small_harvest.png" ,
-  "date" : 1600601747
+  "date" : 11/09/2020
 }
 ```
 
@@ -73,7 +73,7 @@ This is an example of a supply chain step in a **Multilanguage**: JSON format
       "method":"by hand",
       "randomValue":"N6L!Qw@EEdXP844",
       "thumbnail":"https://raw.githubusercontent.com/Devoleum/templates-json/master/steps/imgs/thumbnails/small_harvest.png",
-      "date":"20/10/2019"
+      "date":"11/09/2020"
    },
    "it":{
       "name":"Raccolta",
@@ -83,7 +83,7 @@ This is an example of a supply chain step in a **Multilanguage**: JSON format
       "metodo":"a mano",
       "randomValue":"N6L!Qw@EEdXP844",
       "thumbnail":"https://raw.githubusercontent.com/Devoleum/templates-json/master/steps/imgs/thumbnails/small_harvest.png",
-      "date":"20/10/2019"
+      "date":"11/09/2020"
    }
 }
 ```
