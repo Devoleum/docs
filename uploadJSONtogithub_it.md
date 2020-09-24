@@ -2,15 +2,15 @@
 
 **[Github.com](Github.com)** è una multinazionale americana che fornisce hosting per **sviluppo software** e **controllo versione** utilizzando [Git](https://git-scm.com/). Offre la funzionalità **controllo della versione distribuita** e **gestione del codice sorgente (SCM)** di [Git](https://git-scm.com/), oltre alle proprie funzionalità.
 
-## 1.1 Creare una repository pubblico
+## 1.1 Creare una repository pubblica
 
-Su **Github** puoi creare un **repository pubblica** in cui archiviare i tuoi file **JSON** gratuitamente. 
+Su **Github** puoi creare una **repository pubblica** in cui archiviare i tuoi file **JSON** gratuitamente. 
 
 ![newrepo](https://github.com/Devoleum/docs/blob/master/img/EN/newrepogithub_en.png?raw=true)
 
 ## 1.2 Crea/carica file JSON
 
-dopo aver creato la tua **repository pubblico** , è possibile caricare o creare un file **JSON** direttamente nella repository
+dopo aver creato la tua **repository pubblica** , è possibile caricare o creare un file **JSON** direttamente nella repository
 
 ![createoruploadJSON](https://github.com/Devoleum/docs/blob/master/img/EN/createoruploadJSON_en.png?raw=true )
 
@@ -27,7 +27,7 @@ I file **JSON** che possiamo usare con **Devoleum** hanno una parte fissa:
   "method":"a mano" ,
   "randomValue": "N6L! Qw @ EEdXP844",
   "thumbnail": "https://raw.githubusercontent.com/Devoleum/templates-json/master/steps/imgs/thumbnails/small_harvest.png",
-  "date" : 1600601747
+  "date" : 10/09/2020
 }
 ```
 
