@@ -49,6 +49,14 @@ Questo è un esempio di un passaggio della filiera in formato JSON:
 
 I file JSON che possiamo usare con Devoleum hanno una parte fissa composta da quattro parametri richiesti:` name`, `description`, `iamge`, ` thumbnail` e `date`. I file JSON possono essere arricchiti con molti più parametri. Ad esempio, coordinate GPS, collegamenti a documenti, voci di valori (es. Quantità), collegamenti ad altri media, ecc. Tutto ciò che l'utente pensa può aggiungere valori alla cronologia dei suoi prodotti. Questo è possibile perché utilizzando un JSON memorizziamo solo i riferimenti alla blockchain di Ethereum e non i file stessi.  
 
+| parametro | descrizione |
+| ------ | ------ |
+| name | nome che identifica l'azienda, il prodotto o il passaggio  |
+| description | una descrizione |
+| image | link diretto ad una immagine |
+| thumbnail | versione miniaturizzata dell'immagine |
+| date | data di riferimento es. 25/09/2020 |
+
 Come possiamo vedere guardando l'esempio sopra, in quel caso abbiamo arricchito il JSON con tre proprietà aggiuntive: `method`,` quantity` e `date`. "randomValue" è fortemente raccomandato per tutelare maggiormente la privacy.
 
 ## 1.5 JSON Struttura Multilingua
@@ -82,6 +90,16 @@ Questo è un esempio dello stesso passaggio della filiera presentato nel precede
 ```
 
 In questo caso la struttura del JSON di prima è ripetuta per ogni lingua (**multilingua**) con la quale si desidera presentare la storia. In questo esempio i dati del passaggio della filiera sono immessi in inglese ("en") ed italiano ("it").
+
+Parametri lingue più comuni:
+
+| acronimo | lingua |
+| ------ | ------ |
+| en | inglese  |
+| it | italiano |
+| fr | francese |
+| es | spagnolo |
+| de | tedesco |
 
 # 2. Come notarizzare la propria filiera utilizzando Devoleum
 
