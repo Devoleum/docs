@@ -96,7 +96,7 @@ Common language parameters:
 | ------ | ------ |
 | en | english  |
 | it | italian |
-| fr | franch |
+| fr | french |
 | es | spanish |
 | de | german |
 
