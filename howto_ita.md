@@ -43,7 +43,7 @@ Questo è un esempio di un passaggio della filiera in formato JSON:
   "method": "by hand",
   "randomValue": "N6L!Qw@EEdXP844",
   "thumbnail": "https://raw.githubusercontent.com/Devoleum/templates-json/master/steps/imgs/thumbnails/small_harvest.png",
-  "date": "20/10/2019"
+  "date": "11/09/2020"
 }
 ```
 
@@ -74,7 +74,7 @@ Questo è un esempio dello stesso passaggio della filiera presentato nel precede
       "method":"by hand",
       "randomValue":"N6L!Qw@EEdXP844",
       "thumbnail":"https://raw.githubusercontent.com/Devoleum/templates-json/master/steps/imgs/thumbnails/small_harvest.png",
-      "date":"20/10/2019"
+      "date":"11/09/2020"
    },
    "it":{
       "name":"Raccolta",
@@ -84,7 +84,7 @@ Questo è un esempio dello stesso passaggio della filiera presentato nel precede
       "metodo":"a mano",
       "randomValue":"N6L!Qw@EEdXP844",
       "thumbnail":"https://raw.githubusercontent.com/Devoleum/templates-json/master/steps/imgs/thumbnails/small_harvest.png",
-      "date":"20/10/2019"
+      "date":"11/09/2020"
    }
 }
 ```
