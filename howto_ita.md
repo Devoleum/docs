@@ -51,9 +51,9 @@ I file JSON che possiamo usare con Devoleum hanno una parte fissa composta da qu
 
 Come possiamo vedere guardando l'esempio sopra, in quel caso abbiamo arricchito il JSON con tre proprietà aggiuntive: `method`,` quantity` e `date`. "randomValue" è fortemente raccomandato per tutelare maggiormente la privacy.
 
-## 1.5 JSON Multilingua
+## 1.5 JSON Struttura Multilingua
 
-Questo è un esempio dello stesso passaggio della filiera presentato nel precedente paragrafo in formato JSON **Multilingua**:
+Questo è un esempio dello stesso passaggio della filiera presentato nel precedente paragrafo in un formato JSON **Multilingua**:
 
 ```
 {
@@ -81,7 +81,7 @@ Questo è un esempio dello stesso passaggio della filiera presentato nel precede
 }
 ```
 
-In questo caso la struttura del JSON di prima è ripetuta per ogni lingua (**multilingua**) con la quale si desidera presentare la storia. Nell'esempio sopra i dati sono immessi in inglese ("en") ed italiano ("it").
+In questo caso la struttura del JSON di prima è ripetuta per ogni lingua (**multilingua**) con la quale si desidera presentare la storia. In questo esempio i dati del passaggio della filiera sono immessi in inglese ("en") ed italiano ("it").
 
 # 2. Come notarizzare la propria filiera utilizzando Devoleum
 
