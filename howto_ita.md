@@ -57,7 +57,7 @@ I file JSON che possiamo usare con Devoleum hanno una parte fissa composta da qu
 | thumbnail | versione miniaturizzata dell'immagine |
 | date | data di riferimento es. 25/09/2020 |
 
-Come possiamo vedere guardando l'esempio sopra, in quel caso abbiamo arricchito il JSON con tre proprietà aggiuntive: `method`,` quantity` e `date`. "randomValue" è fortemente raccomandato per tutelare maggiormente la privacy.
+Come possiamo vedere guardando l'esempio sopra, in quel caso abbiamo arricchito il JSON con tre proprietà aggiuntive: `method` e `quantity`. "randomValue" è fortemente raccomandato per tutelare maggiormente la privacy.
 
 ## 1.5 JSON Struttura Multilingua
 
