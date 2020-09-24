@@ -10,9 +10,9 @@ curly-quotes = true
 mathjax-support = false
 copy-fonts = true
 no-section-label = false
-git-repository-url = "https://github.com/rust-lang/mdBook"
+git-repository-url = "https://github.com/Devoleum/docs/tree/master/devoleum_book/devoleum-docs-ita"
 git-repository-icon = "fa-github"
-site-url = "/devoleum-docs/"
+site-url = "/devoleum-docs-ita/"
 cname = "myproject.rs"
 input-404 = "404.md"
 
