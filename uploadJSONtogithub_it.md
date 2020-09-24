@@ -2,15 +2,15 @@
 
 **[Github.com](Github.com)** è una multinazionale americana che fornisce hosting per **sviluppo software** e **controllo versione** utilizzando [Git](https://git-scm.com/). Offre la funzionalità **controllo della versione distribuita** e **gestione del codice sorgente (SCM)** di [Git](https://git-scm.com/), oltre alle proprie funzionalità.
 
-## 1.1 Creare un repository pubblico
+## 1.1 Creare una repository pubblico
 
-Su **Github** puoi creare un **repository pubblico** in cui archiviare i tuoi file **JSON** gratuitamente. 
+Su **Github** puoi creare un **repository pubblica** in cui archiviare i tuoi file **JSON** gratuitamente. 
 
 ![newrepo](https://github.com/Devoleum/docs/blob/master/img/EN/newrepogithub_en.png?raw=true)
 
 ## 1.2 Crea/carica file JSON
 
-dopo aver creato il tuo **repository pubblico** , è possibile caricare o creare un file **JSON** direttamente nel repository
+dopo aver creato la tua **repository pubblico** , è possibile caricare o creare un file **JSON** direttamente nella repository
 
 ![createoruploadJSON](https://github.com/Devoleum/docs/blob/master/img/EN/createoruploadJSON_en.png?raw=true )
 
@@ -31,9 +31,9 @@ I file **JSON** che possiamo usare con **Devoleum** hanno una parte fissa:
 }
 ```
 
-I file **JSON** che possiamo usare con Devoleum hanno una parte fissa composta da quattro parametri obbligatori: `name`, `description` e `thumbnail`. I file **JSON** possono essere arricchiti con molti più parametri. Ad esempio, coordinate GPS, collegamenti a documenti, voci di valori (es. Quantità), collegamenti ad altri media, ecc. Tutto ciò che l'utente pensa può aggiungere valori alla storia dei suoi prodotti. Questo è possibile perché utilizzando un JSON memorizziamo solo i riferimenti alla **blockchain di Ethereum** e non i file stessi.  
+I file **JSON** che possiamo usare con Devoleum hanno una parte fissa composta da quattro parametri obbligatori: `name`, `description`, `thumbnail` e `date`. I file **JSON** possono essere arricchiti con molti più parametri. Ad esempio, coordinate GPS, collegamenti a documenti, voci di valori (es. Quantità), collegamenti ad altri media, ecc. Tutto ciò che l'utente pensa può aggiungere valori alla storia dei suoi prodotti. Questo è possibile perché utilizzando un JSON memorizziamo solo i riferimenti alla **blockchain di Ethereum** e non i file stessi.  
 
-Come possiamo vedere guardando l'esempio precedente, in quel caso abbiamo arricchito il **JSON** con tre proprietà aggiuntive: `method`, `quantity` e `date`. "RandomValue" è fortemente raccomandato per scopi privacy.
+Come possiamo vedere guardando l'esempio precedente, in quel caso abbiamo arricchito il **JSON** con tre proprietà aggiuntive: `method` e `quantity`. "RandomValue" è fortemente raccomandato per scopi privacy.
 
 ## 1.4 Crea un file JSON 
 
