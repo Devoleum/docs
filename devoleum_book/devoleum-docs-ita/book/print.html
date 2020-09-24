@@ -1,0 +1,352 @@
+<!DOCTYPE HTML>
+<html lang="en" class="sidebar-visible no-js coal">
+    <head>
+        <!-- Book generated using mdBook -->
+        <meta charset="UTF-8">
+        <title>Devoleum docs</title>
+        
+        <meta name="robots" content="noindex" />
+        
+        
+
+
+        <!-- Custom HTML head -->
+        
+
+
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <meta name="description" content="The example book covers examples.">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="theme-color" content="#ffffff" />
+
+        <link rel="icon" href="favicon.svg">
+        <link rel="shortcut icon" href="favicon.png">
+        <link rel="stylesheet" href="css/variables.css">
+        <link rel="stylesheet" href="css/general.css">
+        <link rel="stylesheet" href="css/chrome.css">
+        <link rel="stylesheet" href="css/print.css" media="print">
+
+        <!-- Fonts -->
+        <link rel="stylesheet" href="FontAwesome/css/font-awesome.css">
+        
+        <link rel="stylesheet" href="fonts/fonts.css">
+        
+
+        <!-- Highlight.js Stylesheets -->
+        <link rel="stylesheet" href="highlight.css">
+        <link rel="stylesheet" href="tomorrow-night.css">
+        <link rel="stylesheet" href="ayu-highlight.css">
+
+        <!-- Custom theme stylesheets -->
+        
+
+        
+    </head>
+    <body>
+        <!-- Provide site root to javascript -->
+        <script type="text/javascript">
+            var path_to_root = "";
+            var default_theme = window.matchMedia("(prefers-color-scheme: dark)").matches ? "coal" : "coal";
+        </script>
+
+        <!-- Work around some values being stored in localStorage wrapped in quotes -->
+        <script type="text/javascript">
+            try {
+                var theme = localStorage.getItem('mdbook-theme');
+                var sidebar = localStorage.getItem('mdbook-sidebar');
+
+                if (theme.startsWith('"') && theme.endsWith('"')) {
+                    localStorage.setItem('mdbook-theme', theme.slice(1, theme.length - 1));
+                }
+
+                if (sidebar.startsWith('"') && sidebar.endsWith('"')) {
+                    localStorage.setItem('mdbook-sidebar', sidebar.slice(1, sidebar.length - 1));
+                }
+            } catch (e) { }
+        </script>
+
+        <!-- Set the theme before any content is loaded, prevents flash -->
+        <script type="text/javascript">
+            var theme;
+            try { theme = localStorage.getItem('mdbook-theme'); } catch(e) { }
+            if (theme === null || theme === undefined) { theme = default_theme; }
+            var html = document.querySelector('html');
+            html.classList.remove('no-js')
+            html.classList.remove('coal')
+            html.classList.add(theme);
+            html.classList.add('js');
+        </script>
+
+        <!-- Hide / unhide sidebar before it is displayed -->
+        <script type="text/javascript">
+            var html = document.querySelector('html');
+            var sidebar = 'hidden';
+            if (document.body.clientWidth >= 1080) {
+                try { sidebar = localStorage.getItem('mdbook-sidebar'); } catch(e) { }
+                sidebar = sidebar || 'visible';
+            }
+            html.classList.remove('sidebar-visible');
+            html.classList.add("sidebar-" + sidebar);
+        </script>
+
+        <nav id="sidebar" class="sidebar" aria-label="Table of contents">
+            <div class="sidebar-scrollbox">
+                <ol class="chapter"><li class="chapter-item expanded "><a href="intro/index.html"><strong aria-hidden="true">1.</strong> Devoleum</a></li><li><ol class="section"><li class="chapter-item expanded "><a href="intro/easy.html"><strong aria-hidden="true">1.1.</strong> Facile da usare</a></li><li class="chapter-item expanded "><a href="intro/transp.html"><strong aria-hidden="true">1.2.</strong> Trasparenza e accessibilità</a></li><li class="chapter-item expanded "><a href="intro/owner.html"><strong aria-hidden="true">1.3.</strong> Sei il proprietario dei tuoi dati</a></li><li class="chapter-item expanded "><a href="intro/formatJSON.html"><strong aria-hidden="true">1.4.</strong> Formato JSON</a></li><li class="chapter-item expanded "><a href="intro/lang.html"><strong aria-hidden="true">1.5.</strong> JSON Struttura Multilingua</a></li></ol></li><li class="chapter-item expanded "><a href="notarize/index.html"><strong aria-hidden="true">2.</strong> Come notarizzare la propria filiera utilizzando Devoleum</a></li><li><ol class="section"><li class="chapter-item expanded "><a href="notarize/pre.html"><strong aria-hidden="true">2.1.</strong> Prerequisiti per immettere dati utilizzando Devoleum</a></li><li class="chapter-item expanded "><a href="notarize/config.html"><strong aria-hidden="true">2.2.</strong> Configurare Metamask</a></li><li class="chapter-item expanded "><a href="notarize/platforms.html"><strong aria-hidden="true">2.3.</strong> Devoleum piattaforme</a></li><li class="chapter-item expanded "><a href="notarize/storytelling.html"><strong aria-hidden="true">2.4.</strong> Storytelling</a></li><li class="chapter-item expanded "><a href="notarize/open.html"><strong aria-hidden="true">2.5.</strong> Aperto e accessibile</a></li><li class="spacer"></li></ol></li><li class="chapter-item expanded "><a href="misc/contributors.html">Contributors</a></li></ol>
+            </div>
+            <div id="sidebar-resize-handle" class="sidebar-resize-handle"></div>
+        </nav>
+
+        <div id="page-wrapper" class="page-wrapper">
+
+            <div class="page">
+                
+                <div id="menu-bar-hover-placeholder"></div>
+                <div id="menu-bar" class="menu-bar sticky bordered">
+                    <div class="left-buttons">
+                        <button id="sidebar-toggle" class="icon-button" type="button" title="Toggle Table of Contents" aria-label="Toggle Table of Contents" aria-controls="sidebar">
+                            <i class="fa fa-bars"></i>
+                        </button>
+                        <button id="theme-toggle" class="icon-button" type="button" title="Change theme" aria-label="Change theme" aria-haspopup="true" aria-expanded="false" aria-controls="theme-list">
+                            <i class="fa fa-paint-brush"></i>
+                        </button>
+                        <ul id="theme-list" class="theme-popup" aria-label="Themes" role="menu">
+                            <li role="none"><button role="menuitem" class="theme" id="light">Light</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="rust">Rust</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="coal">Coal (default)</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="navy">Navy</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="ayu">Ayu</button></li>
+                        </ul>
+                        
+                        <button id="search-toggle" class="icon-button" type="button" title="Search. (Shortkey: s)" aria-label="Toggle Searchbar" aria-expanded="false" aria-keyshortcuts="S" aria-controls="searchbar">
+                            <i class="fa fa-search"></i>
+                        </button>
+                        
+                    </div>
+
+                    <h1 class="menu-title">Devoleum docs</h1>
+
+                    <div class="right-buttons">
+                        <a href="print.html" title="Print this book" aria-label="Print this book">
+                            <i id="print-button" class="fa fa-print"></i>
+                        </a>
+                        
+                        <a href="https://github.com/Devoleum/docs/tree/master/devoleum_book/devoleum-docs-ita" title="Git repository" aria-label="Git repository">
+                            <i id="git-repository-button" class="fa fa-github"></i>
+                        </a>
+                        
+                    </div>
+                </div>
+
+                
+                <div id="search-wrapper" class="hidden">
+                    <form id="searchbar-outer" class="searchbar-outer">
+                        <input type="search" name="search" id="searchbar" name="searchbar" placeholder="Search this book ..." aria-controls="searchresults-outer" aria-describedby="searchresults-header">
+                    </form>
+                    <div id="searchresults-outer" class="searchresults-outer hidden">
+                        <div id="searchresults-header" class="searchresults-header"></div>
+                        <ul id="searchresults">
+                        </ul>
+                    </div>
+                </div>
+                
+
+                <!-- Apply ARIA attributes after the sidebar and the sidebar toggle button are added to the DOM -->
+                <script type="text/javascript">
+                    document.getElementById('sidebar-toggle').setAttribute('aria-expanded', sidebar === 'visible');
+                    document.getElementById('sidebar').setAttribute('aria-hidden', sidebar !== 'visible');
+                    Array.from(document.querySelectorAll('#sidebar a')).forEach(function(link) {
+                        link.setAttribute('tabIndex', sidebar === 'visible' ? 0 : -1);
+                    });
+                </script>
+
+                <div id="content" class="content">
+                    <main>
+                        <h1><a class="header" href="#devoleum" id="devoleum">Devoleum</a></h1>
+<p><strong><a href="intro/devoleum.com">Devoleum</a></strong> è una piattaforma web basata sulla <strong>blockchain di Ethereum</strong> che ti consente di autenticare e monitorare le filiere di prodotti <em>digitali</em> o <em>fisici</em>, i casi d’uso possono variare da filiera agricola tradizionale ai servizi di streaming.</p>
+<p>Visita Devoleum su <a href="intro/Devoleum.com">Devoleum.com</a></p>
+<h1><a class="header" href="#facile-da-usare" id="facile-da-usare">Facile da usare</a></h1>
+<p>Su <strong>Devoleum</strong> puoi visualizzare la storia del prodotto semplicemente utilizzando un <strong>link</strong> o utilizzando un <strong>codice QR</strong>. Il consumatore dovrà semplicemente scansionare un codice QR.</p>
+<p><img src="https://github.com/Devoleum/docs/blob/master/img/EN/easytouse_en.png?raw=true" alt="esempio" /></p>
+<h1><a class="header" href="#trasparenza-e-accessibilità" id="trasparenza-e-accessibilità">Trasparenza e accessibilità</a></h1>
+<p><strong>Devoleum</strong> è un progetto <a href="https://github.com/Devoleum"><strong>Open Source</strong></a>, ognuno può implementarlo e usarlo a modo suo.</p>
+<p>L’<strong>obiettivo di Devoleum</strong> è offrire un servizio <em>trasparente</em> e <em>accessibile</em> ai consumatori e ai produttori, utilizzando l’immutabilità blockchain come valore aggiunto per rendere i dati archiviati autentici e impossibili da manipolare.</p>
+<h1><a class="header" href="#sei-il-proprietario-dei-tuoi-dati" id="sei-il-proprietario-dei-tuoi-dati">Sei il proprietario dei tuoi dati</a></h1>
+<p><strong>Devoleum</strong> memorizza solo l’hash <em>e il collegamento relativo a un JSON</em>.</p>
+<blockquote>
+<p>Esempio dei dati memorizzati nel contratto intelligente sul
+blockchain</p>
+<p><strong>Link:</strong> https://raw.githubusercontent.com/Devoleum/templates-json/master/steps/harvest.json</p>
+<p><strong>Hash:</strong> 25b95975cdc2b5c2d86d93de2bae687124f4f250ac02d3010cdfe8d4031dedc8</p>
+</blockquote>
+<h1><a class="header" href="#formato-json" id="formato-json">Formato JSON</a></h1>
+<p>Al produttore sarà richiesto di avere i dati in formato <strong>JSON</strong> su un hosting di sua preferenza (server e database proprietari, GitHub, DropBox, Drive, ecc ..) dove il produttore conserva la proprietà e il controllo totale dei dati.</p>
+<p>JSON è un formato di file standard aperto e un formato di interscambio di dati, che utilizza testo <strong>leggibile dall’uomo</strong> per memorizzare e trasmettere oggetti di dati costituiti da coppie attributo-valore.</p>
+<p>Questo è un esempio di un passaggio della filiera in formato JSON:</p>
+<pre><code>{
+  &quot;name&quot;: &quot;Harvest&quot;,
+  &quot;description&quot;: &quot;The harvest of Thor olives&quot;,
+  &quot;image&quot;: &quot;https://raw.githubusercontent.com/Devoleum/templates-json/master/steps/imgs/harvest.png&quot;,
+  &quot;quantity&quot;: &quot;90kg&quot;,
+  &quot;method&quot;: &quot;by hand&quot;,
+  &quot;randomValue&quot;: &quot;N6L!Qw@EEdXP844&quot;,
+  &quot;thumbnail&quot;: &quot;https://raw.githubusercontent.com/Devoleum/templates-json/master/steps/imgs/thumbnails/small_harvest.png&quot;,
+  &quot;date&quot;: &quot;11/09/2020&quot;
+}
+</code></pre>
+<p>I file JSON che possiamo usare con Devoleum hanno una parte fissa composta da quattro parametri richiesti:<code> name</code>, <code>description</code>, <code>image</code>, <code> thumbnail</code> e <code>date</code>. I file JSON possono essere arricchiti con molti più parametri. Ad esempio, coordinate GPS, collegamenti a documenti, voci di valori (es. Quantità), collegamenti ad altri media, ecc. Tutto ciò che l’utente pensa può aggiungere valori alla cronologia dei suoi prodotti. Questo è possibile perché utilizzando un JSON memorizziamo solo i riferimenti alla blockchain di Ethereum e non i file stessi.</p>
+<table><thead><tr><th>parametro</th><th>descrizione</th></tr></thead><tbody>
+<tr><td>name</td><td>nome che identifica l’azienda, il prodotto o il passaggio</td></tr>
+<tr><td>description</td><td>una descrizione</td></tr>
+<tr><td>image</td><td>link diretto ad una immagine</td></tr>
+<tr><td>thumbnail</td><td>versione miniaturizzata dell’immagine</td></tr>
+<tr><td>date</td><td>data di riferimento es. 25/09/2020</td></tr>
+</tbody></table>
+<p>Come possiamo vedere guardando l’esempio sopra, in quel caso abbiamo arricchito il JSON con tre proprietà aggiuntive: <code>method</code> e <code>quantity</code>. “randomValue” è fortemente raccomandato per tutelare maggiormente la privacy.</p>
+<h1><a class="header" href="#json-struttura-multilingua" id="json-struttura-multilingua">JSON Struttura Multilingua</a></h1>
+<p>Questo è un esempio dello stesso passaggio della filiera presentato nel precedente paragrafo in un formato JSON <strong>Multilingua</strong>:</p>
+<pre><code>{
+   &quot;multi_lang&quot;:true,
+   &quot;en&quot;:{
+      &quot;name&quot;:&quot;Harvest&quot;,
+      &quot;description&quot;:&quot;The harvest of Thor olives&quot;,
+      &quot;image&quot;:&quot;https://raw.githubusercontent.com/Devoleum/templates-json/master/steps/imgs/harvest.png&quot;,
+      &quot;quantity&quot;:&quot;90kg&quot;,
+      &quot;method&quot;:&quot;by hand&quot;,
+      &quot;randomValue&quot;:&quot;N6L!Qw@EEdXP844&quot;,
+      &quot;thumbnail&quot;:&quot;https://raw.githubusercontent.com/Devoleum/templates-json/master/steps/imgs/thumbnails/small_harvest.png&quot;,
+      &quot;date&quot;:&quot;11/09/2020&quot;
+   },
+   &quot;it&quot;:{
+      &quot;name&quot;:&quot;Raccolta&quot;,
+      &quot;description&quot;:&quot;Raccolta olive Thor&quot;,
+      &quot;image&quot;:&quot;https://raw.githubusercontent.com/Devoleum/templates-json/master/steps/imgs/harvest.png&quot;,
+      &quot;quantità&quot;:&quot;90kg&quot;,
+      &quot;metodo&quot;:&quot;a mano&quot;,
+      &quot;randomValue&quot;:&quot;N6L!Qw@EEdXP844&quot;,
+      &quot;thumbnail&quot;:&quot;https://raw.githubusercontent.com/Devoleum/templates-json/master/steps/imgs/thumbnails/small_harvest.png&quot;,
+      &quot;date&quot;:&quot;11/09/2020&quot;
+   }
+}
+</code></pre>
+<p>In questo caso la struttura del JSON di prima è ripetuta per ogni lingua (<strong>multilingua</strong>) con la quale si desidera presentare la storia. In questo esempio i dati del passaggio della filiera sono immessi in inglese (”en”) ed italiano (”it”).</p>
+<p>Parametri lingue più comuni:</p>
+<table><thead><tr><th>acronimo</th><th>lingua</th></tr></thead><tbody>
+<tr><td>en</td><td>inglese</td></tr>
+<tr><td>it</td><td>italiano</td></tr>
+<tr><td>fr</td><td>francese</td></tr>
+<tr><td>es</td><td>spagnolo</td></tr>
+<tr><td>de</td><td>tedesco</td></tr>
+</tbody></table>
+<h1><a class="header" href="#come-notarizzare-la-propria-filiera-utilizzando-devoleum" id="come-notarizzare-la-propria-filiera-utilizzando-devoleum">Come notarizzare la propria filiera utilizzando Devoleum</a></h1>
+<p>In questa sezione troverai le informazioni su come notarizzare la propria filiera utilizzando Devoleum</p>
+<h1><a class="header" href="#prerequisiti-per-immettere-dati-utilizzando-devoleum" id="prerequisiti-per-immettere-dati-utilizzando-devoleum">Prerequisiti per immettere dati utilizzando Devoleum</a></h1>
+<ul>
+<li>Il primo prerequisito è disporre di un browser come <strong>Google Chrome</strong>, <strong>Firefox</strong> o <strong>Brave</strong>. Sul tuo smartphone puoi utilizzare <strong>Metamask Mobile</strong>.</li>
+<li>Il browser deve avere l ‘<strong>estensione Metamask</strong> installata, che ti permette di interagire con la blockchain, maggiori dettagli qui: <a href="https://metamask.io/">https://metamask.io/</a></li>
+</ul>
+<blockquote>
+<p>Un video tutorial su Metamask può essere trovato <a href="https://www.youtube.com/watch?v=yWfZnjkhhhg">qui</a>, ricordati di impostare Metamask sulla <strong>rete Rinkeby</strong>.</p>
+</blockquote>
+<p><em>Nota: l’estensione Metamask è necessaria solo per l’inserimento dei dati. Tutti possono leggere i dati ed esplorare le storie con un semplice browser da qualsiasi dispositivo.</em></p>
+<h1><a class="header" href="#configurare-metamask" id="configurare-metamask">Configurare Metamask</a></h1>
+<ul>
+<li>Impostare <strong>rete MetaMask</strong> su <strong>Rinkeby</strong>, Devoleum utilizza Rinkeby rete di test, non utilizza criptovalute reali ma fondi fittizi, perché lo scopo è tracciare i dati senza implicare transazioni finanziarie, quindi non c’è bisogno di acquistare criptovalute.</li>
+<li>Per ottenere fondi sulla <strong>Rinkeby rete</strong>, utilizza semplicemente un “faucet” disponibile a questo link: <a href="https://faucet.rinkeby.io/">https://faucet.rinkeby.io/</a></li>
+</ul>
+<h1><a class="header" href="#devoleum-piattaforme" id="devoleum-piattaforme">Devoleum piattaforme</a></h1>
+<p>Vai su <a href="https://www.devoleum.com/">Devoleum.com</a> e scegli di utilizzare <a href="https://simulation.devoleum.com/">Simulation</a> o <a href="https://collaborations.devoleum.com/Histories">Collaboration</a>.</p>
+<p>La <strong>piattaforma di collaborazione</strong> viene utilizzata per le collaborazioni ufficiali e necessita di una pre-approvazione.</p>
+<p><strong>Devoleum</strong> è composto da tre parti principali:</p>
+<ul>
+<li>Profilo del commerciante</li>
+<li>Storia del prodotto</li>
+<li>Passaggio della filiera</li>
+</ul>
+<p>Il commerciante può creare una storia di un prodotto e aggiungere passaggi, seguendo una struttura gerarchica.</p>
+<h3><a class="header" href="#esempio" id="esempio">Esempio</a></h3>
+<ul>
+<li>Il commerciante “Evoil” crea un profilo sulla Devoleum piattaforma di simulazione, nella sezione del profilo</li>
+<li>Il commerciante crea una storia chiamata “Evoil 2020” sulla produzione delle EVOO bottiglienel 2020</li>
+<li>Il commerciante aggiunge un passaggio denominato “Raccolto” nella storia “Evoil 2020”</li>
+<li>Il commerciante aggiunge un passaggio denominato “Trasporto” nella storia “Evoil 2020”</li>
+<li>Il commerciante aggiunge un passaggio denominato “Elaborazione” nella storia “Evoil 2020”</li>
+<li>E aggiungi passaggi a questo cronologia fino alla vendita del prodotto su un mercato</li>
+</ul>
+<p>Questo processo risulterà in una storia della filiera su <strong>Devoleum:</strong></p>
+<p><img src="https://github.com/Devoleum/docs/blob/master/img/EN/example_en.png?raw=true" alt="esempio" /></p>
+<h1><a class="header" href="#storytelling" id="storytelling">Storytelling</a></h1>
+<p>Come è possibile vedere nell’<a href="notarize/platforms.html#esempio">esempio precedente</a>, ogni singolo passaggio permette di costruire una pagina che racconta la storia del prodotto grazie a <strong>Devoleum</strong>. La storia viene mostrata unendo i collegamenti JSON autenticati sulla blockchain di Ethereum dal commerciante.</p>
+<p>La <strong>storia del prodotto</strong> con i riferimenti notarili blockchain può essere condivisa tramite un <strong>link</strong> o <strong>codice QR</strong>.</p>
+<p>Al consumatore finale viene così data la possibilità di consultare facilmente la storia del prodotto grazie all’utilizzo di un link o alla scansione di un codice QR.</p>
+<h1><a class="header" href="#aperto-e-accessibile" id="aperto-e-accessibile">Aperto e accessibile</a></h1>
+<p><strong>Devoleum</strong> è sviluppato seguendo l’ottica <strong>accessibility by design</strong>, è possibile accedere alla storia dei prodotti utilizzando un qualsiasi browser mobile o desktop.</p>
+<p>Inoltre la natura <strong>open source</strong> del progetto lascia infinite possibilità per la creazione di servizi di supporto e integrazione in siti di terze parti (es. Widget su e-commerce, integrazione con robot / macchinari per l’inserimento automatizzato dei dati) grazie all’utilizzo del <strong>Devoleum API</strong> che possono essere create anche dagli Devoleum utenti.</p>
+<h1><a class="header" href="#contributors" id="contributors">Contributors</a></h1>
+<p>Here is a list of the contributors who have helped. Big
+shout-out to them!</p>
+<ul>
+<li><a href="https://github.com/LorenzoZaccagnini">Lorenzo Zaccagnini</a></li>
+<li><a href="https://github.com/elisaromondia">Elisa Romondia</a></li>
+</ul>
+<p>If you feel you’re missing from this list, feel free to add yourself in a PR.</p>
+
+                    </main>
+
+                    <nav class="nav-wrapper" aria-label="Page navigation">
+                        <!-- Mobile navigation buttons -->
+                        
+
+                        
+
+                        <div style="clear: both"></div>
+                    </nav>
+                </div>
+            </div>
+
+            <nav class="nav-wide-wrapper" aria-label="Page navigation">
+                
+
+                
+            </nav>
+
+        </div>
+
+        
+
+        
+
+        
+
+        
+        <script type="text/javascript">
+            window.playground_copyable = true;
+        </script>
+        
+
+        
+
+        
+        <script src="elasticlunr.min.js" type="text/javascript" charset="utf-8"></script>
+        <script src="mark.min.js" type="text/javascript" charset="utf-8"></script>
+        <script src="searcher.js" type="text/javascript" charset="utf-8"></script>
+        
+
+        <script src="clipboard.min.js" type="text/javascript" charset="utf-8"></script>
+        <script src="highlight.js" type="text/javascript" charset="utf-8"></script>
+        <script src="book.js" type="text/javascript" charset="utf-8"></script>
+
+        <!-- Custom JS scripts -->
+        
+
+        
+        
+        <script type="text/javascript">
+        window.addEventListener('load', function() {
+            window.setTimeout(window.print, 100);
+        });
+        </script>
+        
+        
+
+    </body>
+</html>
