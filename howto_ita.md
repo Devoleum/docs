@@ -36,18 +36,32 @@ JSON è un formato di file standard aperto e un formato di interscambio di dati,
 Questo è un esempio di un passaggio della filiera in formato JSON:
 ```
 {
-  "name": "Harvest",
-  "description": "La raccolta delle olive di Thor",
-  "image": "https://raw.githubusercontent.com/Devoleum/templates-json/master/steps/imgs/harvest.png",
-  "quantity": "90 kg",
-  "method": "a mano",
-  "randomValue": "N6L! Qw @ EEdXP844",
-  "thumbnail" : "https://raw.githubusercontent.com/Devoleum/templates-json/master/steps/imgs/thumbnails/small_harvest.png" ,
-  "date": 1600601747
- }
+   "multi_lang":true,
+   "en":{
+      "name":"Harvest",
+      "description":"The harvest of Thor olives",
+      "image":"https://raw.githubusercontent.com/Devoleum/templates-json/master/steps/imgs/harvest.png",
+      "quantity":"90kg",
+      "method":"by hand",
+      "randomValue":"N6L!Qw@EEdXP844",
+      "thumbnail":"https://raw.githubusercontent.com/Devoleum/templates-json/master/steps/imgs/thumbnails/small_harvest.png",
+      "date":"20/10/2019"
+   },
+   "it":{
+      "name":"Raccolta",
+      "description":"Raccolta olive Thor",
+      "image":"https://raw.githubusercontent.com/Devoleum/templates-json/master/steps/imgs/harvest.png",
+      "quantità":"90kg",
+      "metodo":"a mano",
+      "randomValue":"N6L!Qw@EEdXP844",
+      "thumbnail":"https://raw.githubusercontent.com/Devoleum/templates-json/master/steps/imgs/thumbnails/small_harvest.png",
+      "date":"20/10/2019"
+   }
+}
+
 ```
 
-I file JSON che possiamo usare con Devoleum hanno una parte fissa composta da quattro parametri richiesti:` name`, `description` e` thumbnail`. I file JSON possono essere arricchiti con molti più parametri. Ad esempio, coordinate GPS, collegamenti a documenti, voci di valori (es. Quantità), collegamenti ad altri media, ecc. Tutto ciò che l'utente pensa può aggiungere valori alla cronologia dei suoi prodotti. Questo è possibile perché utilizzando un JSON memorizziamo solo i riferimenti alla blockchain di Ethereum e non i file stessi.  
+I file JSON che possiamo usare con Devoleum hanno una parte fissa composta da quattro parametri richiesti:` name`, `description`, `iamge`, ` thumbnail` e `date`. Questa parte fissa è ripetuta per ogni lingua (**multilingua**) con la quale si desidera presentare la storia. Nell'esempio sopra i dati sono immessi in inglese ("en") ed italiano ("it"). I file JSON possono essere arricchiti con molti più parametri. Ad esempio, coordinate GPS, collegamenti a documenti, voci di valori (es. Quantità), collegamenti ad altri media, ecc. Tutto ciò che l'utente pensa può aggiungere valori alla cronologia dei suoi prodotti. Questo è possibile perché utilizzando un JSON memorizziamo solo i riferimenti alla blockchain di Ethereum e non i file stessi.  
 
 Come possiamo vedere guardando l'esempio sopra, in quel caso abbiamo arricchito il JSON con tre proprietà aggiuntive: `method`,` quantity` e `date`. "randomValue" è fortemente raccomandato per tutelare maggiormente la privacy.
 
