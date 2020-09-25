@@ -14,13 +14,13 @@ Il commerciante può creare una storia di un prodotto e aggiungere passaggi, seg
 
 ### Esempio
 
-* Il commerciante "Evoil" crea un profilo sulla Devoleum piattaforma di simulazione, nella sezione del profilo
-* Il commerciante crea una storia chiamata "Evoil 2020" sulla produzione delle EVOO bottiglienel 2020
+* Il commerciante "Evoil" crea un profilo sulla piattaforma di simulazione, nella sezione del profilo
+* Il commerciante crea una storia chiamata "Evoil 2020" riguardo la produzione delle bottiglie EVOO nel 2020
 * Il commerciante aggiunge un passaggio denominato "Raccolto" nella storia "Evoil 2020"
 * Il commerciante aggiunge un passaggio denominato "Trasporto" nella storia "Evoil 2020"
 * Il commerciante aggiunge un passaggio denominato "Elaborazione" nella storia "Evoil 2020"
-* E aggiungi passaggi a questo cronologia fino alla vendita del prodotto su un mercato
+* E aggiunge passaggi nella storia fino al passaggio finale della vendita del prodotto su un mercato
 
-Questo processo risulterà in una storia della filiera su **Devoleum:**
+Questo processo sviluppera una storia della filiera su **Devoleum:**
 
 ![esempio](https://github.com/Devoleum/docs/blob/master/img/EN/example_en.png?raw=true)

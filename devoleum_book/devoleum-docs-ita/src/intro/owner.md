@@ -3,7 +3,7 @@
 **Devoleum** memorizza solo l'hash *e il collegamento relativo a un JSON*.
 
 
-> Esempio dei dati memorizzati nel contratto intelligente sul
+> Esempio dei dati memorizzati nello smart contract su
 blockchain
 >
 >**Link:** https://raw.githubusercontent.com/Devoleum/templates-json/master/steps/harvest.json
