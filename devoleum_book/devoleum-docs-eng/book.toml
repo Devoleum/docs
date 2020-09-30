@@ -1,0 +1,42 @@
+[book]
+title = "Devoleum docs"
+authors = ["Lorenzo Zaccagnini", "Elisa Romondia"]
+description = "The example book covers examples."
+
+[output.html]
+default-theme = "coal"
+preferred-dark-theme = "coal"
+curly-quotes = true
+mathjax-support = false
+copy-fonts = true
+no-section-label = false
+git-repository-url = "https://github.com/Devoleum/docs/tree/master/devoleum_book/devoleum-docs-eng"
+git-repository-icon = "fa-github"
+site-url = "/devoleum-docs-eng/"
+cname = "myproject.rs"
+input-404 = "404.md"
+
+[output.html.fold]
+enable = false
+level = 0
+
+[output.html.playground]
+editable = false
+copy-js = true
+line-numbers = false
+
+[output.html.search]
+enable = true
+limit-results = 30
+teaser-word-count = 30
+use-boolean-and = true
+boost-title = 2
+boost-hierarchy = 1
+boost-paragraph = 1
+expand = true
+heading-split-level = 3
+copy-js = true
+
+[output.html.redirect]
+"/appendices/bibliography.html" = "https://rustc-dev-guide.rust-lang.org/appendix/bibliography.html"
+"/other-installation-methods.html" = "../infra/other-installation-methods.html"
