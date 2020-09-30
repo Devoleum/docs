@@ -1,3 +1,3 @@
-# Come notarizzare la propria filiera utilizzando Devoleum
+# How to notarize your supply chain using Devoleum
 
-In questa sezione troverai le informazioni su come notarizzare la propria filiera utilizzando Devoleum
+In this section you will find information on how to notarize your own supply chain using Devoleum

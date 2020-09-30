@@ -1,15 +1,15 @@
-# Prerequisiti
+# Prerequisites
 
-I prerequisiti per visualizzare dati sulla piattaforma di Devoleum "collaborazioni" sono semplici:
+The prerequisites to view data on the Devoleum "collaborations" platform are simple:
 
-1. Utilizzare un browser come Chrome o Firefox, possibile da qualsiasi dispositivo
+1. Use a browser like Chrome or Firefox, possible from any device
 
-I prerequisiti per immettere dati sono:
+The prerequisites for entering data are:
 
-1. Utilizzare un browser come Chrome o Firefox da Desktop, Metamask mobile da smartphone o tablet.
-2.  Sui browser desktop installare installare l'estensione Metamask
+1. Use a browser like Chrome or Firefox from Desktop, Mobile metamask from smartphone or tablet.
+2. Install the Metamask extension on desktop browsers.
 
-I prerequisiti per visualizzare dati sulla piattaforma di Devoleum "simulazione" sono:
+The prerequisites to view data on the Devoleum "simulation" platform are:
 
-1. Utilizzare un browser come Chrome o Firefoxda Desktop, Metamask mobile da smartphone o tablet.
-2. Sui browser desktop installare l'estensione Metamask, poichè ad differenza della piattaforma delle collaborazioni non ci sono oracoli che permettono di fare da ponte dalla blockchain Ethereum 
+1. Use a browser such as Chrome or Firefox from Desktop, Metamask mobile from smartphone or tablet.
+2. Install the Metamask extension on desktop browsers, as unlike the collaboration platform there are no oracles that allow you to bridge the Ethereum blockchain.
