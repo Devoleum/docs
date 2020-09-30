@@ -1,4 +1,4 @@
-# ransparency and accessibility 
+# Transparency and accessibility 
 
 **Devoleum** is an [**Open Source** project](https://github.com/Devoleum), everyone can implement it and use it in their own way. 
 

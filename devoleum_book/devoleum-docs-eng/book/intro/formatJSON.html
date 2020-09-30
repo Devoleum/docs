@@ -3,7 +3,7 @@
     <head>
         <!-- Book generated using mdBook -->
         <meta charset="UTF-8">
-        <title>Formato JSON - Devoleum docs</title>
+        <title>JSON format - Devoleum docs</title>
         
         
 
@@ -89,7 +89,7 @@
 
         <nav id="sidebar" class="sidebar" aria-label="Table of contents">
             <div class="sidebar-scrollbox">
-                <ol class="chapter"><li class="chapter-item expanded "><a href="../intro/index.html"><strong aria-hidden="true">1.</strong> Devoleum</a></li><li><ol class="section"><li class="chapter-item expanded "><a href="../intro/easy.html"><strong aria-hidden="true">1.1.</strong> Facile da usare</a></li><li class="chapter-item expanded "><a href="../intro/transp.html"><strong aria-hidden="true">1.2.</strong> Trasparenza e accessibilità</a></li><li class="chapter-item expanded "><a href="../intro/owner.html"><strong aria-hidden="true">1.3.</strong> Sei il proprietario dei tuoi dati</a></li><li class="chapter-item expanded "><a href="../intro/formatJSON.html" class="active"><strong aria-hidden="true">1.4.</strong> Formato JSON</a></li><li class="chapter-item expanded "><a href="../intro/lang.html"><strong aria-hidden="true">1.5.</strong> JSON Struttura Multilingua</a></li></ol></li><li class="chapter-item expanded "><a href="../notarize/index.html"><strong aria-hidden="true">2.</strong> Come notarizzare la propria filiera utilizzando Devoleum</a></li><li><ol class="section"><li class="chapter-item expanded "><a href="../notarize/pre.html"><strong aria-hidden="true">2.1.</strong> Prerequisiti per immettere dati utilizzando Devoleum</a></li><li class="chapter-item expanded "><a href="../notarize/config.html"><strong aria-hidden="true">2.2.</strong> Configurare Metamask</a></li><li class="chapter-item expanded "><a href="../notarize/platforms.html"><strong aria-hidden="true">2.3.</strong> Devoleum piattaforme</a></li><li class="chapter-item expanded "><a href="../notarize/storytelling.html"><strong aria-hidden="true">2.4.</strong> Storytelling</a></li><li class="chapter-item expanded "><a href="../notarize/open.html"><strong aria-hidden="true">2.5.</strong> Aperto e accessibile</a></li><li class="spacer"></li></ol></li><li class="chapter-item expanded "><a href="../misc/contributors.html">Contributors</a></li></ol>
+                <ol class="chapter"><li class="chapter-item expanded "><a href="../intro/index.html"><strong aria-hidden="true">1.</strong> Devoleum</a></li><li><ol class="section"><li class="chapter-item expanded "><a href="../intro/easy.html"><strong aria-hidden="true">1.1.</strong> Easy to use</a></li><li class="chapter-item expanded "><a href="../intro/transp.html"><strong aria-hidden="true">1.2.</strong> Transparency and accessibility</a></li><li class="chapter-item expanded "><a href="../intro/owner.html"><strong aria-hidden="true">1.3.</strong> You own your data</a></li><li class="chapter-item expanded "><a href="../intro/formatJSON.html" class="active"><strong aria-hidden="true">1.4.</strong> JSON format</a></li><li class="chapter-item expanded "><a href="../intro/lang.html"><strong aria-hidden="true">1.5.</strong> JSON format Multilanguage</a></li></ol></li><li class="chapter-item expanded "><a href="../notarize/index.html"><strong aria-hidden="true">2.</strong> How to notarize your supply chain using Devoleum</a></li><li><ol class="section"><li class="chapter-item expanded "><a href="../notarize/pre.html"><strong aria-hidden="true">2.1.</strong> Prerequisites to insert data into Devoleum</a></li><li class="chapter-item expanded "><a href="../notarize/config.html"><strong aria-hidden="true">2.2.</strong> Configure Metamask</a></li><li class="chapter-item expanded "><a href="../notarize/platforms.html"><strong aria-hidden="true">2.3.</strong> Devoleum platforms</a></li><li class="chapter-item expanded "><a href="../notarize/storytelling.html"><strong aria-hidden="true">2.4.</strong> Storytelling</a></li><li class="chapter-item expanded "><a href="../notarize/open.html"><strong aria-hidden="true">2.5.</strong> Open and Accessible</a></li><li class="spacer"></li></ol></li><li class="chapter-item expanded "><a href="../misc/contributors.html">Contributors</a></li></ol>
             </div>
             <div id="sidebar-resize-handle" class="sidebar-resize-handle"></div>
         </nav>
@@ -128,7 +128,7 @@
                             <i id="print-button" class="fa fa-print"></i>
                         </a>
                         
-                        <a href="https://github.com/Devoleum/docs/tree/master/devoleum_book/devoleum-docs-ita" title="Git repository" aria-label="Git repository">
+                        <a href="https://github.com/Devoleum/docs/tree/master/devoleum_book/devoleum-docs-eng" title="Git repository" aria-label="Git repository">
                             <i id="git-repository-button" class="fa fa-github"></i>
                         </a>
                         
@@ -159,10 +159,11 @@
 
                 <div id="content" class="content">
                     <main>
-                        <h1><a class="header" href="#formato-json" id="formato-json">Formato JSON</a></h1>
-<p>Al produttore sarà richiesto di avere i dati in formato <strong>JSON</strong> su un hosting di sua preferenza (server e database proprietari, GitHub, DropBox, Drive, ecc ..) dove il produttore conserva la proprietà e il controllo totale dei dati.</p>
-<p>JSON è un formato di file standard aperto e un formato di interscambio di dati, che utilizza testo <strong>leggibile dall’uomo</strong> per memorizzare e trasmettere oggetti di dati costituiti da coppie attributo-valore.</p>
-<p>Questo è un esempio di un passaggio della filiera in formato JSON:</p>
+                        <h1><a class="header" href="#json-format" id="json-format">JSON format</a></h1>
+<p>The producer will be required to have the data in <strong>JSON</strong> format on a hosting of his preference (proprietary servers and databases, GitHub, DropBox, Drive, 
+etc ..) where the producer will keep the ownership and total control of the data.
+JSON is an open standard file format, and data interchange format, that uses <strong>human-readable</strong> text to store and transmit data objects consisting of attribute–value pairs. </p>
+<p>This is an example of a supply chain step in JSON format:</p>
 <pre><code>{
   &quot;name&quot;: &quot;Harvest&quot;,
   &quot;description&quot;: &quot;The harvest of Thor olives&quot;,
@@ -170,19 +171,19 @@
   &quot;quantity&quot;: &quot;90kg&quot;,
   &quot;method&quot;: &quot;by hand&quot;,
   &quot;randomValue&quot;: &quot;N6L!Qw@EEdXP844&quot;,
-  &quot;thumbnail&quot;: &quot;https://raw.githubusercontent.com/Devoleum/templates-json/master/steps/imgs/thumbnails/small_harvest.png&quot;,
-  &quot;date&quot;: &quot;11/09/2020&quot;
+  &quot;thumbnail&quot; : &quot;https://raw.githubusercontent.com/Devoleum/templates-json/master/steps/imgs/thumbnails/small_harvest.png&quot; ,
+  &quot;date&quot; : 11/09/2020
 }
 </code></pre>
-<p>I file JSON che possiamo usare con Devoleum hanno una parte fissa composta da quattro parametri richiesti:<code> name</code>, <code>description</code>, <code>image</code>, <code> thumbnail</code> e <code>date</code>. I file JSON possono essere arricchiti con molti più parametri. Ad esempio, coordinate GPS, collegamenti a documenti, voci di valori (es. Quantità), collegamenti ad altri media, ecc. Tutto ciò che l’utente pensa può aggiungere valori alla cronologia dei suoi prodotti. Questo è possibile perché utilizzando un JSON memorizziamo solo i riferimenti alla blockchain di Ethereum e non i file stessi.</p>
-<table><thead><tr><th>parametro</th><th>descrizione</th></tr></thead><tbody>
-<tr><td>name</td><td>nome che identifica l’azienda, il prodotto o il passaggio</td></tr>
-<tr><td>description</td><td>una descrizione</td></tr>
-<tr><td>image</td><td>link diretto ad una immagine</td></tr>
-<tr><td>thumbnail</td><td>versione miniaturizzata dell’immagine</td></tr>
-<tr><td>date</td><td>data di riferimento es. 25/09/2020</td></tr>
+<p>The JSON files that we can use with Devoleum have a fixed part composed of four required parameters: <code>name</code>, <code>description</code>, <code>image</code>, <code>thumbnail</code> and ´date`. The JSON files can be enriched with many more parameters. For example, GPS coordinates, document links, values entries (eg. quantity), links to other media, etc. Everything that the user thinks can add values to the history of their products. This is possible because using a JSON we store only the references to the Ethereum blockchain and not the files themself.</p>
+<table><thead><tr><th>key</th><th>description</th></tr></thead><tbody>
+<tr><td>name</td><td>name that idenfies a merchant, product or a supply chain step</td></tr>
+<tr><td>description</td><td>a description</td></tr>
+<tr><td>image</td><td>image direct link</td></tr>
+<tr><td>thumbnail</td><td>thumbnail direct link</td></tr>
+<tr><td>date</td><td>a date es. 25/09/2020</td></tr>
 </tbody></table>
-<p>Come possiamo vedere guardando l’esempio sopra, in quel caso abbiamo arricchito il JSON con tre proprietà aggiuntive: <code>method</code> e <code>quantity</code>. “randomValue” è fortemente raccomandato per tutelare maggiormente la privacy.</p>
+<p>As we can see looking at the example above, in that case we have enriched the JSON with three additional properties: <code>method</code> and <code>quantity</code>. The <code>randomValue</code> is strongly recommended for privacy purposes.</p>
 
                     </main>
 
