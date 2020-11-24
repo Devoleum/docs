@@ -8,6 +8,7 @@ Questo è un esempio di un passaggio della filiera in formato JSON:
 ```
 {
   "name": "Harvest",
+  "section": "step",
   "description": "The harvest of Thor olives",
   "image": "https://raw.githubusercontent.com/Devoleum/templates-json/master/steps/imgs/harvest.png",
   "quantity": "90kg",
@@ -23,6 +24,7 @@ I file JSON che possiamo usare con Devoleum hanno una parte fissa composta da qu
 | parametro | descrizione |
 | ------ | ------ |
 | name | nome che identifica l'azienda, il prodotto o il passaggio  |
+| section | identifica la sezione del JSON, può assumere solo uno di questi tre valori: merchant_profile history step . Il profilo utente avra come sezione merchant_profile, la storia di un prodotto history, un passaggio avrà come sezione step|
 | description | una descrizione |
 | image | link diretto ad una immagine |
 | thumbnail | versione miniaturizzata dell'immagine |

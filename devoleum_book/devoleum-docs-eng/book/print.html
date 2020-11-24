@@ -19,12 +19,8 @@
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <meta name="theme-color" content="#ffffff" />
 
-        
         <link rel="icon" href="favicon.svg">
-        
-        
         <link rel="shortcut icon" href="favicon.png">
-        
         <link rel="stylesheet" href="css/variables.css">
         <link rel="stylesheet" href="css/general.css">
         <link rel="stylesheet" href="css/chrome.css">
@@ -167,7 +163,7 @@
                     <main>
                         <h1><a class="header" href="#devoleum" id="devoleum">Devoleum</a></h1>
 <p><strong><a href="intro/devoleum.com">Devoleum</a></strong> is a web platform based on <strong>Ethereum blockchain</strong> that allows you to notarize and track supply chains of <em>digital</em> or <em>physical</em> products, use cases can range from traditional agricultural supply chain to streaming services.</p>
-<p>Visit Devoleum at <a href="intro/Devoleum.com">Devoleum.com</a></p>
+<p>Visit Devoleum at <a href="https://www.devoleum.com/">Devoleum.com</a></p>
 <h1><a class="header" href="#easy-to-use" id="easy-to-use">Easy to use</a></h1>
 <p>On <strong>Devoleum</strong> you can view the product history simply by using the <em>product history</em> <strong>link</strong> or using a <strong>QR code</strong>. The consumer will simply have to scan a QR Code.</p>
 <p><img src="https://github.com/Devoleum/docs/blob/master/img/EN/easytouse_en.png?raw=true" alt="example" /></p>
@@ -188,6 +184,7 @@ JSON is an open standard file format, and data interchange format, that uses <st
 <p>This is an example of a supply chain step in JSON format:</p>
 <pre><code>{
   &quot;name&quot;: &quot;Harvest&quot;,
+  &quot;section&quot;: &quot;step&quot;,
   &quot;description&quot;: &quot;The harvest of Thor olives&quot;,
   &quot;image&quot;: &quot;https://raw.githubusercontent.com/Devoleum/templates-json/master/steps/imgs/harvest.png&quot;,
   &quot;quantity&quot;: &quot;90kg&quot;,
@@ -200,6 +197,7 @@ JSON is an open standard file format, and data interchange format, that uses <st
 <p>The JSON files that we can use with Devoleum have a fixed part composed of four required parameters: <code>name</code>, <code>description</code>, <code>image</code>, <code>thumbnail</code> and ´date`. The JSON files can be enriched with many more parameters. For example, GPS coordinates, document links, values entries (eg. quantity), links to other media, etc. Everything that the user thinks can add values to the history of their products. This is possible because using a JSON we store only the references to the Ethereum blockchain and not the files themself.</p>
 <table><thead><tr><th>key</th><th>description</th></tr></thead><tbody>
 <tr><td>name</td><td>name that idenfies a merchant, product or a supply chain step</td></tr>
+<tr><td>section</td><td>identifies the section of the JSON, it can take only one of these three values:: merchant_profile history step . The user profile will have the “merchant_profile” section value, the history of a product we’ll have “history”, a step will have a “step” section value</td></tr>
 <tr><td>description</td><td>a description</td></tr>
 <tr><td>image</td><td>image direct link</td></tr>
 <tr><td>thumbnail</td><td>thumbnail direct link</td></tr>
@@ -207,9 +205,10 @@ JSON is an open standard file format, and data interchange format, that uses <st
 </tbody></table>
 <p>As we can see looking at the example above, in that case we have enriched the JSON with three additional properties: <code>method</code> and <code>quantity</code>. The <code>randomValue</code> is strongly recommended for privacy purposes.</p>
 <h1><a class="header" href="#json-format-multilanguage" id="json-format-multilanguage">JSON format Multilanguage</a></h1>
-<p>This is an example of a supply chain step in a <strong>Multilanguage</strong>: JSON format </p>
+<p>This is an example of a supply chain step in a <strong>Multilanguage</strong>: JSON format</p>
 <pre><code>{
-   &quot;multi_lang&quot;:true,
+   &quot;multi_lang&quot;: true,
+   &quot;section&quot;: &quot;step&quot;,
    &quot;en&quot;:{
       &quot;name&quot;:&quot;Harvest&quot;,
       &quot;description&quot;:&quot;The harvest of Thor olives&quot;,

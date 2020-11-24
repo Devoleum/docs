@@ -162,8 +162,8 @@
                 <div id="content" class="content">
                     <main>
                         <h1><a class="header" href="#devoleum" id="devoleum">Devoleum</a></h1>
-<p><strong><a href="intro/devoleum.com">Devoleum</a></strong> è una piattaforma web basata sulla <strong>blockchain di Ethereum</strong> che ti consente di autenticare e monitorare le filiere di prodotti <em>digitali</em> o <em>fisici</em>, i casi d’uso possono variare dalla filiera agricola tradizionale ai servizi di streaming.</p>
-<p>Visita Devoleum su <a href="intro/Devoleum.com">Devoleum.com</a></p>
+<p><strong><a href="https://www.devoleum.com">Devoleum</a></strong> è una piattaforma web basata sulla <strong>blockchain di Ethereum</strong> che ti consente di autenticare e monitorare le filiere di prodotti <em>digitali</em> o <em>fisici</em>, i casi d’uso possono variare dalla filiera agricola tradizionale ai servizi di streaming.</p>
+<p>Visita Devoleum su <a href="https://www.devoleum.com">Devoleum.com</a></p>
 <h1><a class="header" href="#facile-da-usare" id="facile-da-usare">Facile da usare</a></h1>
 <p>Su <strong>Devoleum</strong> puoi visualizzare la storia del prodotto semplicemente utilizzando un <strong>link</strong> o utilizzando un <strong>codice QR</strong>. Il consumatore dovrà semplicemente scansionare un codice QR.</p>
 <p><img src="https://github.com/Devoleum/docs/blob/master/img/EN/easytouse_en.png?raw=true" alt="esempio" /></p>
@@ -184,6 +184,7 @@ blockchain</p>
 <p>Questo è un esempio di un passaggio della filiera in formato JSON:</p>
 <pre><code>{
   &quot;name&quot;: &quot;Harvest&quot;,
+  &quot;section&quot;: &quot;step&quot;,
   &quot;description&quot;: &quot;The harvest of Thor olives&quot;,
   &quot;image&quot;: &quot;https://raw.githubusercontent.com/Devoleum/templates-json/master/steps/imgs/harvest.png&quot;,
   &quot;quantity&quot;: &quot;90kg&quot;,
@@ -196,6 +197,7 @@ blockchain</p>
 <p>I file JSON che possiamo usare con Devoleum hanno una parte fissa composta da quattro parametri richiesti:<code> name</code>, <code>description</code>, <code>image</code>, <code> thumbnail</code> e <code>date</code>. I file JSON possono essere arricchiti con molti più parametri. Ad esempio, coordinate GPS, collegamenti a documenti, voci di valori (es. Quantità), collegamenti ad altri media, ecc. Tutto ciò che l’utente pensa può aggiungere valori alla cronologia dei suoi prodotti. Questo è possibile perché utilizzando un JSON memorizziamo solo i riferimenti alla blockchain di Ethereum e non i file stessi.</p>
 <table><thead><tr><th>parametro</th><th>descrizione</th></tr></thead><tbody>
 <tr><td>name</td><td>nome che identifica l’azienda, il prodotto o il passaggio</td></tr>
+<tr><td>section</td><td>identifica la sezione del JSON, può assumere solo uno di questi tre valori: merchant_profile history step . Il profilo utente avra come sezione merchant_profile, la storia di un prodotto history, un passaggio avrà come sezione step</td></tr>
 <tr><td>description</td><td>una descrizione</td></tr>
 <tr><td>image</td><td>link diretto ad una immagine</td></tr>
 <tr><td>thumbnail</td><td>versione miniaturizzata dell’immagine</td></tr>
@@ -206,6 +208,7 @@ blockchain</p>
 <p>Questo è un esempio dello stesso passaggio della filiera presentato nel precedente paragrafo in un formato JSON <strong>Multilingua</strong>:</p>
 <pre><code>{
    &quot;multi_lang&quot;:true,
+   &quot;section&quot;: &quot;step&quot;,
    &quot;en&quot;:{
       &quot;name&quot;:&quot;Harvest&quot;,
       &quot;description&quot;:&quot;The harvest of Thor olives&quot;,

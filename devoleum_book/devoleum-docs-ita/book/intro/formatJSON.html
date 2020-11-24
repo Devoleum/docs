@@ -165,6 +165,7 @@
 <p>Questo è un esempio di un passaggio della filiera in formato JSON:</p>
 <pre><code>{
   &quot;name&quot;: &quot;Harvest&quot;,
+  &quot;section&quot;: &quot;step&quot;,
   &quot;description&quot;: &quot;The harvest of Thor olives&quot;,
   &quot;image&quot;: &quot;https://raw.githubusercontent.com/Devoleum/templates-json/master/steps/imgs/harvest.png&quot;,
   &quot;quantity&quot;: &quot;90kg&quot;,
@@ -177,6 +178,7 @@
 <p>I file JSON che possiamo usare con Devoleum hanno una parte fissa composta da quattro parametri richiesti:<code> name</code>, <code>description</code>, <code>image</code>, <code> thumbnail</code> e <code>date</code>. I file JSON possono essere arricchiti con molti più parametri. Ad esempio, coordinate GPS, collegamenti a documenti, voci di valori (es. Quantità), collegamenti ad altri media, ecc. Tutto ciò che l’utente pensa può aggiungere valori alla cronologia dei suoi prodotti. Questo è possibile perché utilizzando un JSON memorizziamo solo i riferimenti alla blockchain di Ethereum e non i file stessi.</p>
 <table><thead><tr><th>parametro</th><th>descrizione</th></tr></thead><tbody>
 <tr><td>name</td><td>nome che identifica l’azienda, il prodotto o il passaggio</td></tr>
+<tr><td>section</td><td>identifica la sezione del JSON, può assumere solo uno di questi tre valori: merchant_profile history step . Il profilo utente avra come sezione merchant_profile, la storia di un prodotto history, un passaggio avrà come sezione step</td></tr>
 <tr><td>description</td><td>una descrizione</td></tr>
 <tr><td>image</td><td>link diretto ad una immagine</td></tr>
 <tr><td>thumbnail</td><td>versione miniaturizzata dell’immagine</td></tr>

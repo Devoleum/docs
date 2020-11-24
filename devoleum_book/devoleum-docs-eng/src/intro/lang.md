@@ -1,10 +1,11 @@
 # JSON format Multilanguage
 
-This is an example of a supply chain step in a **Multilanguage**: JSON format 
+This is an example of a supply chain step in a **Multilanguage**: JSON format
 
 ```
 {
-   "multi_lang":true,
+   "multi_lang": true,
+   "section": "step",
    "en":{
       "name":"Harvest",
       "description":"The harvest of Thor olives",
@@ -33,9 +34,9 @@ In this case, the structure of the first JSON is repeated for each language (**m
 Common language parameters:
 
 | key | language |
-| ------ | ------ |
-| en | english  |
-| it | italian |
-| fr | french |
-| es | spanish |
-| de | german |
+| --- | -------- |
+| en  | english  |
+| it  | italian  |
+| fr  | french   |
+| es  | spanish  |
+| de  | german   |

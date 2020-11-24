@@ -5,6 +5,7 @@ Questo è un esempio dello stesso passaggio della filiera presentato nel precede
 ```
 {
    "multi_lang":true,
+   "section": "step",
    "en":{
       "name":"Harvest",
       "description":"The harvest of Thor olives",
@@ -32,10 +33,10 @@ In questo caso la struttura del JSON di prima è ripetuta per ogni lingua (**mul
 
 Parametri lingue più comuni:
 
-| acronimo | lingua |
-| ------ | ------ |
-| en | inglese  |
-| it | italiano |
-| fr | francese |
-| es | spagnolo |
-| de | tedesco |
+| acronimo | lingua   |
+| -------- | -------- |
+| en       | inglese  |
+| it       | italiano |
+| fr       | francese |
+| es       | spagnolo |
+| de       | tedesco  |

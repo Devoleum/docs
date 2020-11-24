@@ -8,6 +8,7 @@ This is an example of a supply chain step in JSON format:
 ```
 {
   "name": "Harvest",
+  "section": "step",
   "description": "The harvest of Thor olives",
   "image": "https://raw.githubusercontent.com/Devoleum/templates-json/master/steps/imgs/harvest.png",
   "quantity": "90kg",
@@ -23,6 +24,7 @@ The JSON files that we can use with Devoleum have a fixed part composed of four 
 | key | description |
 | ------ | ------ |
 | name | name that idenfies a merchant, product or a supply chain step |
+| section | identifies the section of the JSON, it can take only one of these three values:: merchant_profile history step . The user profile will have the "merchant_profile" section value, the history of a product we'll have "history", a step will have a "step" section value|
 | description | a description |
 | image | image direct link |
 | thumbnail | thumbnail direct link |
