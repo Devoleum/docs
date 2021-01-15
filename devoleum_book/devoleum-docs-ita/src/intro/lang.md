@@ -12,7 +12,6 @@ Questo è un esempio dello stesso passaggio della filiera presentato nel precede
       "image":"https://raw.githubusercontent.com/Devoleum/templates-json/master/steps/imgs/harvest.png",
       "quantity":"90kg",
       "method":"by hand",
-      "randomValue":"N6L!Qw@EEdXP844",
       "thumbnail":"https://raw.githubusercontent.com/Devoleum/templates-json/master/steps/imgs/thumbnails/small_harvest.png",
       "date":"11/09/2020"
    },
@@ -22,7 +21,6 @@ Questo è un esempio dello stesso passaggio della filiera presentato nel precede
       "image":"https://raw.githubusercontent.com/Devoleum/templates-json/master/steps/imgs/harvest.png",
       "quantità":"90kg",
       "metodo":"a mano",
-      "randomValue":"N6L!Qw@EEdXP844",
       "thumbnail":"https://raw.githubusercontent.com/Devoleum/templates-json/master/steps/imgs/thumbnails/small_harvest.png",
       "date":"11/09/2020"
    }
