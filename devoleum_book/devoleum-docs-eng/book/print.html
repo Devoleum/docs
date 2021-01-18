@@ -91,7 +91,7 @@
 
         <nav id="sidebar" class="sidebar" aria-label="Table of contents">
             <div class="sidebar-scrollbox">
-                <ol class="chapter"><li class="chapter-item expanded "><a href="intro/index.html"><strong aria-hidden="true">1.</strong> Devoleum</a></li><li><ol class="section"><li class="chapter-item expanded "><a href="intro/easy.html"><strong aria-hidden="true">1.1.</strong> Easy to use</a></li><li class="chapter-item expanded "><a href="intro/transp.html"><strong aria-hidden="true">1.2.</strong> Transparency and accessibility</a></li><li class="chapter-item expanded "><a href="intro/owner.html"><strong aria-hidden="true">1.3.</strong> You own your data</a></li><li class="chapter-item expanded "><a href="intro/formatJSON.html"><strong aria-hidden="true">1.4.</strong> JSON format</a></li><li class="chapter-item expanded "><a href="intro/lang.html"><strong aria-hidden="true">1.5.</strong> JSON format Multilanguage</a></li></ol></li><li class="chapter-item expanded "><a href="notarize/index.html"><strong aria-hidden="true">2.</strong> How to notarize your supply chain using Devoleum</a></li><li><ol class="section"><li class="chapter-item expanded "><a href="notarize/pre.html"><strong aria-hidden="true">2.1.</strong> Prerequisites to insert data into Devoleum</a></li><li class="chapter-item expanded "><a href="notarize/config.html"><strong aria-hidden="true">2.2.</strong> Configure Metamask</a></li><li class="chapter-item expanded "><a href="notarize/platforms.html"><strong aria-hidden="true">2.3.</strong> Devoleum platforms</a></li><li class="chapter-item expanded "><a href="notarize/storytelling.html"><strong aria-hidden="true">2.4.</strong> Storytelling</a></li><li class="chapter-item expanded "><a href="notarize/open.html"><strong aria-hidden="true">2.5.</strong> Open and Accessible</a></li><li class="spacer"></li></ol></li><li class="chapter-item expanded "><a href="misc/contributors.html">Contributors</a></li></ol>
+                <ol class="chapter"><li class="chapter-item expanded "><a href="intro/index.html"><strong aria-hidden="true">1.</strong> Devoleum</a></li><li><ol class="section"><li class="chapter-item expanded "><a href="intro/easy.html"><strong aria-hidden="true">1.1.</strong> Easy to use</a></li><li class="chapter-item expanded "><a href="intro/transp.html"><strong aria-hidden="true">1.2.</strong> Transparency and accessibility</a></li><li class="chapter-item expanded "><a href="intro/owner.html"><strong aria-hidden="true">1.3.</strong> You own your data</a></li><li class="chapter-item expanded "><a href="intro/formatJSON.html"><strong aria-hidden="true">1.4.</strong> JSON format</a></li><li class="spacer"></li></ol></li><li class="chapter-item expanded "><a href="misc/contributors.html">Contributors</a></li></ol>
             </div>
             <div id="sidebar-resize-handle" class="sidebar-resize-handle"></div>
         </nav>
@@ -171,40 +171,16 @@
 <p><strong>Devoleum</strong> is an <a href="https://github.com/Devoleum"><strong>Open Source</strong> project</a>, everyone can implement it and use it in their own way. </p>
 <p><strong>Devoleum</strong>‘s aim is to offer a <em>transparent</em> and <em>accessible</em> service to consumers as well as manufacturers, using blockchain immutability as an added value to make the stored data authentic and impossible to manipulate.</p>
 <h1><a class="header" href="#you-own-your-data" id="you-own-your-data">You own your data</a></h1>
-<p><strong>Devoleum</strong> only stores the <em>hash and the link relative to a JSON</em>.</p>
+<p><strong>Devoleum</strong> only stores the <em>anonymized hash and the link relative to a JSON</em>.</p>
 <blockquote>
 <p>Example of the data stored in the smart contract on the blockchain</p>
-<p><strong>Link:</strong> https://raw.githubusercontent.com/Devoleum/templates-json/master/steps/harvest.json</p>
 <p><strong>Hash:</strong> 25b95975cdc2b5c2d86d93de2bae687124f4f250ac02d3010cdfe8d4031dedc8</p>
 </blockquote>
+<p><img src="https://github.com/Devoleum/docs/blob/master/img/EN/prooftx.png?raw=true" alt="example" /></p>
 <h1><a class="header" href="#json-format" id="json-format">JSON format</a></h1>
 <p>The producer will be required to have the data in <strong>JSON</strong> format on a hosting of his preference (proprietary servers and databases, GitHub, DropBox, Drive, 
 etc ..) where the producer will keep the ownership and total control of the data.
 JSON is an open standard file format, and data interchange format, that uses <strong>human-readable</strong> text to store and transmit data objects consisting of attribute–value pairs. </p>
-<p>This is an example of a supply chain step in JSON format:</p>
-<pre><code>{
-  &quot;name&quot;: &quot;Harvest&quot;,
-  &quot;section&quot;: &quot;step&quot;,
-  &quot;description&quot;: &quot;The harvest of Thor olives&quot;,
-  &quot;image&quot;: &quot;https://raw.githubusercontent.com/Devoleum/templates-json/master/steps/imgs/harvest.png&quot;,
-  &quot;quantity&quot;: &quot;90kg&quot;,
-  &quot;method&quot;: &quot;by hand&quot;,
-  &quot;randomValue&quot;: &quot;N6L!Qw@EEdXP844&quot;,
-  &quot;thumbnail&quot; : &quot;https://raw.githubusercontent.com/Devoleum/templates-json/master/steps/imgs/thumbnails/small_harvest.png&quot; ,
-  &quot;date&quot; : 11/09/2020
-}
-</code></pre>
-<p>The JSON files that we can use with Devoleum have a fixed part composed of four required parameters: <code>name</code>, <code>description</code>, <code>image</code>, <code>thumbnail</code> and ´date`. The JSON files can be enriched with many more parameters. For example, GPS coordinates, document links, values entries (eg. quantity), links to other media, etc. Everything that the user thinks can add values to the history of their products. This is possible because using a JSON we store only the references to the Ethereum blockchain and not the files themself.</p>
-<table><thead><tr><th>key</th><th>description</th></tr></thead><tbody>
-<tr><td>name</td><td>name that idenfies a merchant, product or a supply chain step</td></tr>
-<tr><td>section</td><td>identifies the section of the JSON, it can take only one of these three values:: merchant_profile history step . The user profile will have the “merchant_profile” section value, the history of a product we’ll have “history”, a step will have a “step” section value</td></tr>
-<tr><td>description</td><td>a description</td></tr>
-<tr><td>image</td><td>image direct link</td></tr>
-<tr><td>thumbnail</td><td>thumbnail direct link</td></tr>
-<tr><td>date</td><td>a date es. 25/09/2020</td></tr>
-</tbody></table>
-<p>As we can see looking at the example above, in that case we have enriched the JSON with three additional properties: <code>method</code> and <code>quantity</code>. The <code>randomValue</code> is strongly recommended for privacy purposes.</p>
-<h1><a class="header" href="#json-format-multilanguage" id="json-format-multilanguage">JSON format Multilanguage</a></h1>
 <p>This is an example of a supply chain step in a <strong>Multilanguage</strong>: JSON format</p>
 <pre><code>{
    &quot;multi_lang&quot;: true,
@@ -240,50 +216,15 @@ JSON is an open standard file format, and data interchange format, that uses <st
 <tr><td>es</td><td>spanish</td></tr>
 <tr><td>de</td><td>german</td></tr>
 </tbody></table>
-<h1><a class="header" href="#how-to-notarize-your-supply-chain-using-devoleum" id="how-to-notarize-your-supply-chain-using-devoleum">How to notarize your supply chain using Devoleum</a></h1>
-<p>In this section you will find information on how to notarize your own supply chain using Devoleum</p>
-<h1><a class="header" href="#prerequisites-to-insert-data-into-devoleum" id="prerequisites-to-insert-data-into-devoleum">Prerequisites to insert data into Devoleum</a></h1>
-<ul>
-<li>The first prerequisite is to have a browser like <strong>Google Chrome</strong>, <strong>Firefox</strong> or <strong>Brave</strong>. On your smarthone you can use <strong>Metamask Mobile</strong>.</li>
-<li>The browser must have the <strong>Metamask extension</strong> installed, which allows you to interact with the blockchain, more details here: <a href="https://metamask.io/">https://metamask.io/</a></li>
-</ul>
-<blockquote>
-<p>A nice video tutorial about Metamask can be found <a href="https://www.youtube.com/watch?v=yWfZnjkhhhg">here</a>, remember to set it to the <strong>Rinkeby network</strong>.</p>
-</blockquote>
-<p><em>Note: Metamask extension is only needed for data insertion. Everyone can read the data and explore histories with a simple browser from any device.</em></p>
-<h1><a class="header" href="#configure-metamask" id="configure-metamask">Configure Metamask</a></h1>
-<ul>
-<li>Set <strong>MetaMask network</strong> to <strong>Rinkeby</strong>, Devoleum uses the Rinkeby test network, which does not use real cryptocurrencies but fictitious funds, because the purpose is to track the data without implying financial transactions, so no need to buy cryptocurrencies.</li>
-<li>To get funds on the <strong>Rinkeby network</strong>, simply use a faucet available at this link: <a href="https://faucet.rinkeby.io/">https://faucet.rinkeby.io/</a></li>
-</ul>
-<h1><a class="header" href="#devoleum-platforms" id="devoleum-platforms">Devoleum platforms</a></h1>
-<p>Go on <a href="https://www.devoleum.com/">Devoleum.com</a> and chose to use the <a href="https://simulation.devoleum.com/">Simulation</a> or the <a href="https://collaborations.devoleum.com/Histories">Collaboration</a> platform. </p>
-<p>The <strong>Collaboration platform</strong> is used for official collaborations and needs a pre approval. </p>
-<p><strong>Devoleum</strong> is composed by three main parts:</p>
-<ul>
-<li>Merchant profile</li>
-<li>Product history</li>
-<li>Supply chain’s step</li>
-</ul>
-<p>The merchant can create a history about a product and add steps into it, following a hierarchy structure. </p>
-<h3><a class="header" href="#example" id="example">Example</a></h3>
-<ul>
-<li>The merchant “Evoil” creates a profile on Devoleum simulation platform, in the profile section</li>
-<li>The merchant creates an history called “Evoil 2020” about the production of the EVOO bottles in the 2020</li>
-<li>The merchant add a step named “Harvest” in the history “Evoil 2020”</li>
-<li>The merchant add a step named “Transport” in the history “Evoil 2020”</li>
-<li>The merchant add a step named “Processing” in the history “Evoil 2020”</li>
-<li>And add steps to this history until the product is sold in a market</li>
-</ul>
-<p>This process will result in a supply chain history on <strong>Devoleum</strong>:</p>
-<p><img src="https://github.com/Devoleum/docs/blob/master/img/EN/example_en.png?raw=true" alt="example" /></p>
-<h1><a class="header" href="#storytelling" id="storytelling">Storytelling</a></h1>
-<p>As it’s possible to see in the example above, every single step allows you to build a page that tells the story of the product thanks to <strong>Devoleum</strong>. The story is shown by merging the JSON links notarized on the Ethereum blockchain by the merchant.</p>
-<p>The <strong>history of the product</strong> with the blockchain notarization references can be shared via a <strong>link</strong> or <strong>QR code</strong>.</p>
-<p>The final consumer is thus given the opportunity to easily consult the history of the product thanks to the use of a link or the scan of a QR code.</p>
-<h1><a class="header" href="#open-and-accessible" id="open-and-accessible">Open and Accessible</a></h1>
-<p><strong>Devoleum</strong> is developed with <strong>accessibility by design</strong>, the history of the products can be access using from any mobile or desktop browser.</p>
-<p>Furthermore, the <strong>open source</strong> nature of the project leaves infinite possibilities for creating support services and integration in third party sites (eg widgets on e-commerce, integration with robots / machinery for automated data entry) thanks to the use of the <strong>Devoleum APIs</strong> which they can also be created by Devoleum users.</p>
+<p>The JSON files that we can use with Devoleum have a fixed part composed of four required parameters: <code>name</code>, <code>description</code>, <code>image</code>, <code>thumbnail</code> and ´date`. The JSON files can be enriched with many more parameters. For example, GPS coordinates, document links, values entries (eg. quantity), links to other media, etc. Everything that the user thinks can add values to the history of their products. This is possible because using a JSON we store only the anonymized hash into the Ethereum blockchain and not the files themself.</p>
+<table><thead><tr><th>key</th><th>description</th></tr></thead><tbody>
+<tr><td>name</td><td>name that idenfies a merchant, product or a supply chain step</td></tr>
+<tr><td>section</td><td>identifies the section of the JSON, it can take only one of these three values:: merchant_profile history step . The user profile will have the “merchant_profile” section value, the history of a product we’ll have “history”, a step will have a “step” section value</td></tr>
+<tr><td>description</td><td>a description</td></tr>
+<tr><td>image</td><td>image direct link</td></tr>
+<tr><td>thumbnail</td><td>thumbnail direct link</td></tr>
+<tr><td>date</td><td>a date es. 25/09/2020</td></tr>
+</tbody></table>
 <h1><a class="header" href="#contributors" id="contributors">Contributors</a></h1>
 <p>Here is a list of the contributors who have helped. Big
 shout-out to them!</p>

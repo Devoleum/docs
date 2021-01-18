@@ -89,7 +89,7 @@
 
         <nav id="sidebar" class="sidebar" aria-label="Table of contents">
             <div class="sidebar-scrollbox">
-                <ol class="chapter"><li class="chapter-item expanded "><a href="../intro/index.html"><strong aria-hidden="true">1.</strong> Devoleum</a></li><li><ol class="section"><li class="chapter-item expanded "><a href="../intro/easy.html"><strong aria-hidden="true">1.1.</strong> Easy to use</a></li><li class="chapter-item expanded "><a href="../intro/transp.html"><strong aria-hidden="true">1.2.</strong> Transparency and accessibility</a></li><li class="chapter-item expanded "><a href="../intro/owner.html"><strong aria-hidden="true">1.3.</strong> You own your data</a></li><li class="chapter-item expanded "><a href="../intro/formatJSON.html" class="active"><strong aria-hidden="true">1.4.</strong> JSON format</a></li><li class="chapter-item expanded "><a href="../intro/lang.html"><strong aria-hidden="true">1.5.</strong> JSON format Multilanguage</a></li></ol></li><li class="chapter-item expanded "><a href="../notarize/index.html"><strong aria-hidden="true">2.</strong> How to notarize your supply chain using Devoleum</a></li><li><ol class="section"><li class="chapter-item expanded "><a href="../notarize/pre.html"><strong aria-hidden="true">2.1.</strong> Prerequisites to insert data into Devoleum</a></li><li class="chapter-item expanded "><a href="../notarize/config.html"><strong aria-hidden="true">2.2.</strong> Configure Metamask</a></li><li class="chapter-item expanded "><a href="../notarize/platforms.html"><strong aria-hidden="true">2.3.</strong> Devoleum platforms</a></li><li class="chapter-item expanded "><a href="../notarize/storytelling.html"><strong aria-hidden="true">2.4.</strong> Storytelling</a></li><li class="chapter-item expanded "><a href="../notarize/open.html"><strong aria-hidden="true">2.5.</strong> Open and Accessible</a></li><li class="spacer"></li></ol></li><li class="chapter-item expanded "><a href="../misc/contributors.html">Contributors</a></li></ol>
+                <ol class="chapter"><li class="chapter-item expanded "><a href="../intro/index.html"><strong aria-hidden="true">1.</strong> Devoleum</a></li><li><ol class="section"><li class="chapter-item expanded "><a href="../intro/easy.html"><strong aria-hidden="true">1.1.</strong> Easy to use</a></li><li class="chapter-item expanded "><a href="../intro/transp.html"><strong aria-hidden="true">1.2.</strong> Transparency and accessibility</a></li><li class="chapter-item expanded "><a href="../intro/owner.html"><strong aria-hidden="true">1.3.</strong> You own your data</a></li><li class="chapter-item expanded "><a href="../intro/formatJSON.html" class="active"><strong aria-hidden="true">1.4.</strong> JSON format</a></li><li class="spacer"></li></ol></li><li class="chapter-item expanded "><a href="../misc/contributors.html">Contributors</a></li></ol>
             </div>
             <div id="sidebar-resize-handle" class="sidebar-resize-handle"></div>
         </nav>
@@ -163,20 +163,42 @@
 <p>The producer will be required to have the data in <strong>JSON</strong> format on a hosting of his preference (proprietary servers and databases, GitHub, DropBox, Drive, 
 etc ..) where the producer will keep the ownership and total control of the data.
 JSON is an open standard file format, and data interchange format, that uses <strong>human-readable</strong> text to store and transmit data objects consisting of attribute–value pairs. </p>
-<p>This is an example of a supply chain step in JSON format:</p>
+<p>This is an example of a supply chain step in a <strong>Multilanguage</strong>: JSON format</p>
 <pre><code>{
-  &quot;name&quot;: &quot;Harvest&quot;,
-  &quot;section&quot;: &quot;step&quot;,
-  &quot;description&quot;: &quot;The harvest of Thor olives&quot;,
-  &quot;image&quot;: &quot;https://raw.githubusercontent.com/Devoleum/templates-json/master/steps/imgs/harvest.png&quot;,
-  &quot;quantity&quot;: &quot;90kg&quot;,
-  &quot;method&quot;: &quot;by hand&quot;,
-  &quot;randomValue&quot;: &quot;N6L!Qw@EEdXP844&quot;,
-  &quot;thumbnail&quot; : &quot;https://raw.githubusercontent.com/Devoleum/templates-json/master/steps/imgs/thumbnails/small_harvest.png&quot; ,
-  &quot;date&quot; : 11/09/2020
+   &quot;multi_lang&quot;: true,
+   &quot;section&quot;: &quot;step&quot;,
+   &quot;en&quot;:{
+      &quot;name&quot;:&quot;Harvest&quot;,
+      &quot;description&quot;:&quot;The harvest of Thor olives&quot;,
+      &quot;image&quot;:&quot;https://raw.githubusercontent.com/Devoleum/templates-json/master/steps/imgs/harvest.png&quot;,
+      &quot;quantity&quot;:&quot;90kg&quot;,
+      &quot;method&quot;:&quot;by hand&quot;,
+      &quot;randomValue&quot;:&quot;N6L!Qw@EEdXP844&quot;,
+      &quot;thumbnail&quot;:&quot;https://raw.githubusercontent.com/Devoleum/templates-json/master/steps/imgs/thumbnails/small_harvest.png&quot;,
+      &quot;date&quot;:&quot;11/09/2020&quot;
+   },
+   &quot;it&quot;:{
+      &quot;name&quot;:&quot;Raccolta&quot;,
+      &quot;description&quot;:&quot;Raccolta olive Thor&quot;,
+      &quot;image&quot;:&quot;https://raw.githubusercontent.com/Devoleum/templates-json/master/steps/imgs/harvest.png&quot;,
+      &quot;quantità&quot;:&quot;90kg&quot;,
+      &quot;metodo&quot;:&quot;a mano&quot;,
+      &quot;randomValue&quot;:&quot;N6L!Qw@EEdXP844&quot;,
+      &quot;thumbnail&quot;:&quot;https://raw.githubusercontent.com/Devoleum/templates-json/master/steps/imgs/thumbnails/small_harvest.png&quot;,
+      &quot;date&quot;:&quot;11/09/2020&quot;
+   }
 }
 </code></pre>
-<p>The JSON files that we can use with Devoleum have a fixed part composed of four required parameters: <code>name</code>, <code>description</code>, <code>image</code>, <code>thumbnail</code> and ´date`. The JSON files can be enriched with many more parameters. For example, GPS coordinates, document links, values entries (eg. quantity), links to other media, etc. Everything that the user thinks can add values to the history of their products. This is possible because using a JSON we store only the references to the Ethereum blockchain and not the files themself.</p>
+<p>In this case, the structure of the first JSON is repeated for each language (<strong>multilanguage</strong>) with which you want to present the story. In this example, the supply chain step data is entered in English (”en”) and Italian (”it”).</p>
+<p>Common language parameters:</p>
+<table><thead><tr><th>key</th><th>language</th></tr></thead><tbody>
+<tr><td>en</td><td>english</td></tr>
+<tr><td>it</td><td>italian</td></tr>
+<tr><td>fr</td><td>french</td></tr>
+<tr><td>es</td><td>spanish</td></tr>
+<tr><td>de</td><td>german</td></tr>
+</tbody></table>
+<p>The JSON files that we can use with Devoleum have a fixed part composed of four required parameters: <code>name</code>, <code>description</code>, <code>image</code>, <code>thumbnail</code> and ´date`. The JSON files can be enriched with many more parameters. For example, GPS coordinates, document links, values entries (eg. quantity), links to other media, etc. Everything that the user thinks can add values to the history of their products. This is possible because using a JSON we store only the anonymized hash into the Ethereum blockchain and not the files themself.</p>
 <table><thead><tr><th>key</th><th>description</th></tr></thead><tbody>
 <tr><td>name</td><td>name that idenfies a merchant, product or a supply chain step</td></tr>
 <tr><td>section</td><td>identifies the section of the JSON, it can take only one of these three values:: merchant_profile history step . The user profile will have the “merchant_profile” section value, the history of a product we’ll have “history”, a step will have a “step” section value</td></tr>
@@ -185,7 +207,6 @@ JSON is an open standard file format, and data interchange format, that uses <st
 <tr><td>thumbnail</td><td>thumbnail direct link</td></tr>
 <tr><td>date</td><td>a date es. 25/09/2020</td></tr>
 </tbody></table>
-<p>As we can see looking at the example above, in that case we have enriched the JSON with three additional properties: <code>method</code> and <code>quantity</code>. The <code>randomValue</code> is strongly recommended for privacy purposes.</p>
 
                     </main>
 
@@ -198,7 +219,7 @@ JSON is an open standard file format, and data interchange format, that uses <st
                         
 
                         
-                            <a rel="next" href="../intro/lang.html" class="mobile-nav-chapters next" title="Next chapter" aria-label="Next chapter" aria-keyshortcuts="Right">
+                            <a rel="next" href="../misc/contributors.html" class="mobile-nav-chapters next" title="Next chapter" aria-label="Next chapter" aria-keyshortcuts="Right">
                                 <i class="fa fa-angle-right"></i>
                             </a>
                         
@@ -216,7 +237,7 @@ JSON is an open standard file format, and data interchange format, that uses <st
                 
 
                 
-                    <a rel="next" href="../intro/lang.html" class="nav-chapters next" title="Next chapter" aria-label="Next chapter" aria-keyshortcuts="Right">
+                    <a rel="next" href="../misc/contributors.html" class="nav-chapters next" title="Next chapter" aria-label="Next chapter" aria-keyshortcuts="Right">
                         <i class="fa fa-angle-right"></i>
                     </a>
                 
